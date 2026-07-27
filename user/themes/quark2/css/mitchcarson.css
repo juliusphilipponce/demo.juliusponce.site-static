@@ -23,6 +23,31 @@
   overflow-x: hidden;
 }
 
+.mitchcarson-theme #start,
+.mitchcarson-theme #body-wrapper,
+.mitchcarson-theme .section.modular-text {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+}
+
+.mitchcarson-theme .section.modular-text .container {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.mitchcarson-theme .section.modular-text .columns {
+  display: block !important;
+  margin: 0 !important;
+}
+
+.mitchcarson-theme .section.modular-text .column {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 /* NAVBAR HEADER OVERRIDES FOR MITCH CARSON SUB-SITE */
 .mitchcarson-theme #header {
   position: fixed;

@@ -1,0 +1,302 @@
+/*
+ * Quark 2 — user customizations
+ *
+ * This file is safe to edit. It is loaded last so anything here overrides
+ * theme.css without having to mark rules !important.
+ */
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--q2-accent, #333333);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px) scale(0.9);
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              background-color 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.2s ease;
+  padding: 0;
+  outline: none;
+}
+
+[data-theme='dark'] .back-to-top {
+  background: rgba(18, 18, 18, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  color: var(--q2-accent, #ffffff);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.back-to-top:hover {
+  transform: translateY(-4px) scale(1.06);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .back-to-top:hover {
+  background: rgba(28, 28, 28, 0.8);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+}
+
+.back-to-top:active {
+  transform: translateY(-2px) scale(0.96);
+}
+
+.back-to-top:focus-visible {
+  box-shadow: 0 0 0 3px var(--q2-focus-ring, rgba(0, 122, 204, 0.4));
+}
+
+/* Progress SVG */
+.back-to-top-progress {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  transform: rotate(-90deg);
+  width: 48px;
+  height: 48px;
+  pointer-events: none;
+}
+
+.back-to-top-progress-bg {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.03);
+  stroke-width: 2.5;
+}
+
+[data-theme='dark'] .back-to-top-progress-bg {
+  stroke: rgba(255, 255, 255, 0.03);
+}
+
+.back-to-top-progress-fill {
+  fill: none;
+  stroke: var(--q2-accent, #333333);
+  stroke-width: 2.5;
+  stroke-dasharray: 125.66;
+  stroke-dashoffset: 125.66;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.08s linear;
+}
+
+.back-to-top-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.back-to-top:hover .back-to-top-icon {
+  transform: translateY(-2px);
+}
+
+/* Contact Form Styling */
+.modular-row.form {
+  max-width: 650px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.modular-row.form h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+  color: var(--q2-text, #111111);
+}
+
+.modular-row.form p {
+  color: var(--q2-text-light, #666666);
+  margin-bottom: 2.5rem;
+}
+
+/* Form Field Layout */
+.modular-row.form form .form-field {
+  margin-bottom: 1.5rem;
+}
+
+.modular-row.form form .form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--q2-text, #333333);
+}
+
+/* Input Styles */
+.modular-row.form form input[type="text"],
+.modular-row.form form input[type="email"],
+.modular-row.form form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: var(--q2-text, #111111);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-theme='dark'] .modular-row.form form input[type="text"],
+[data-theme='dark'] .modular-row.form form input[type="email"],
+[data-theme='dark'] .modular-row.form form textarea {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.modular-row.form form input[type="text"]:focus,
+.modular-row.form form input[type="email"]:focus,
+.modular-row.form form textarea:focus {
+  outline: none;
+  border-color: var(--q2-accent, #6f42c1);
+  box-shadow: 0 0 0 3px rgba(111, 66, 193, 0.15);
+}
+
+/* Button & Captcha Styles */
+.modular-row.form form .form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+}
+
+.modular-row.form form .btn-primary {
+  background-color: var(--q2-accent, #6f42c1);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.modular-row.form form .btn-primary:hover {
+  background-color: var(--q2-accent-hover, #5a32a3);
+  transform: translateY(-1px);
+}
+
+.modular-row.form form .btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Async Modal Overlay */
+.form-async-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.form-async-modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.form-async-modal {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 320px;
+  width: 90%;
+  text-align: center;
+  transform: scale(0.9);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.form-async-modal-overlay.active .form-async-modal {
+  transform: scale(1);
+}
+
+[data-theme='dark'] .form-async-modal {
+  background: #1e1e1e;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Spinner */
+.form-async-spinner {
+  width: 48px;
+  height: 48px;
+  border: 3.5px solid rgba(111, 66, 193, 0.15);
+  border-top-color: var(--q2-accent, #6f42c1);
+  border-radius: 50%;
+  animation: form-async-spin 0.8s linear infinite;
+}
+
+.form-async-message {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--q2-text, #111111);
+  margin: 0;
+}
+
+[data-theme='dark'] .form-async-message {
+  color: #ffffff;
+}
+
+@keyframes form-async-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Accessibility & Motion Preference Rules */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Touch Target Accessibility Standard (min 44x44px) */
+button, input[type="button"], input[type="submit"], .btn, .copy-btn {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+

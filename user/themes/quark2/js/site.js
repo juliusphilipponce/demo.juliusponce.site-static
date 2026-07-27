@@ -342,6 +342,56 @@
     }
   }
 
+  class MCDemoForm {
+    constructor() {
+      this.init();
+    }
+
+    init() {
+      this.form = document.getElementById('mc-apply-form');
+      this.toast = document.getElementById('mc-toast');
+      this.toastClose = document.getElementById('mc-toast-close');
+
+      if (!this.form || !this.toast) return;
+
+      this.setEventHandlers();
+    }
+
+    setEventHandlers() {
+      this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+      if (this.toastClose) {
+        this.toastClose.addEventListener('click', () => this.hideToast());
+      }
+    }
+
+    handleSubmit(e) {
+      e.preventDefault();
+
+      const btn = document.getElementById('mc-submit-btn');
+      if (!btn) return;
+
+      btn.disabled = true;
+      btn.textContent = 'Submitting…';
+
+      setTimeout(() => {
+        this.form.reset();
+        btn.disabled = false;
+        btn.innerHTML = 'Submit Application <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>';
+        this.showToast();
+      }, 800);
+    }
+
+    showToast() {
+      this.toast.classList.add('mc-toast--visible');
+      setTimeout(() => this.hideToast(), 6000);
+    }
+
+    hideToast() {
+      this.toast.classList.remove('mc-toast--visible');
+    }
+  }
+
   new BackToTop();
   new FormAsyncModal();
+  new MCDemoForm();
 })();

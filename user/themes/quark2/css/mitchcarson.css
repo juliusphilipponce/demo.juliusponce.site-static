@@ -23,6 +23,60 @@
   overflow-x: hidden;
 }
 
+/* NAVBAR HEADER OVERRIDES FOR MITCH CARSON SUB-SITE */
+.mitchcarson-theme #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(9, 10, 15, 0.85) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--mc-card-border);
+  padding: 0.75rem 0;
+}
+
+.mitchcarson-theme #header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.mitchcarson-theme #header .dropmenu ul.navigation {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mitchcarson-theme #header .dropmenu ul.navigation li a {
+  color: var(--mc-text-muted) !important;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0;
+}
+
+.mitchcarson-theme #header .dropmenu ul.navigation li a:hover,
+.mitchcarson-theme #header .dropmenu ul.navigation li a.active {
+  color: var(--mc-gold-start) !important;
+}
+
+.mitchcarson-theme #header .logo a {
+  color: #ffffff !important;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-decoration: none !important;
+}
+
 .mc-container {
   max-width: 1200px;
   margin: 0 auto;

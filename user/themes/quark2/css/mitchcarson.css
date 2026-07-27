@@ -55,6 +55,10 @@ body.mitchcarson-theme .section.modular-text .columns,
 body.mitchcarson-theme .columns,
 body.mitchcarson-theme .grid {
   display: block !important;
+  /* Reset blades.min.css multi-column layout (columns: 25ch auto) */
+  columns: auto !important;
+  column-count: auto !important;
+  -moz-columns: auto !important;
   grid-template-columns: none !important;
   gap: 0 !important;
   margin: 0 !important;
@@ -146,9 +150,11 @@ body.mitchcarson-theme .logo a::after {
 }
 
 .mc-container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  box-sizing: border-box;
 }
 
 /* SECTION GLOBAL */
@@ -247,11 +253,9 @@ body.mitchcarson-theme .logo a::after {
   text-align: center;
   overflow: hidden;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background: #090a0f;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .mc-orb {

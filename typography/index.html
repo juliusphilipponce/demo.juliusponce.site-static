@@ -1,50 +1,46 @@
 <!DOCTYPE html><!--
 
 
-Error: Interface &quot;Twig\Cache\CacheInterface&quot; not found in file C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Cache\FilesystemCache.php on line 8
+LogicException: Cache can only be a string, false, or a \Twig\Cache\CacheInterface implementation. in file C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Environment.php on line 295
 Stack trace:
-  1. Error-&gt;() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Cache\FilesystemCache.php:8
-  2. include() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php:576
-  3. Composer\Autoload\{closure}() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php:427
-  4. Composer\Autoload\ClassLoader-&gt;loadClass() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Twig\Cache\ResilientFilesystemCache.php:18
-  5. include() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php:576
-  6. Composer\Autoload\{closure}() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php:427
-  7. Composer\Autoload\ClassLoader-&gt;loadClass() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Twig\Twig.php:194
-  8. Grav\Common\Twig\Twig-&gt;init() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\TwigProcessor.php:35
-  9. Grav\Common\Processors\TwigProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
- 10. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
- 11. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\AssetsProcessor.php:39
- 12. Grav\Common\Processors\AssetsProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
- 13. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
- 14. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\SchedulerProcessor.php:38
- 15. Grav\Common\Processors\SchedulerProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
- 16. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
- 17. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\BackupsProcessor.php:39
- 18. Grav\Common\Processors\BackupsProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
- 19. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
- 20. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\TasksProcessor.php:69
- 21. Grav\Common\Processors\TasksProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
- 22. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
- 23. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\RequestProcessor.php:64
- 24. Grav\Common\Processors\RequestProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
- 25. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
- 26. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\ThemesProcessor.php:38
- 27. Grav\Common\Processors\ThemesProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
- 28. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
- 29. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\PluginsProcessor.php:39
- 30. Grav\Common\Processors\PluginsProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
- 31. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
- 32. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\InitializeProcessor.php:129
- 33. Grav\Common\Processors\InitializeProcessor-&gt;Grav\Common\Processors\{closure}() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Debugger.php:650
- 34. Grav\Common\Debugger-&gt;profile() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\InitializeProcessor.php:129
- 35. Grav\Common\Processors\InitializeProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
- 36. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
- 37. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Middlewares\MultipartRequestSupport.php:40
- 38. Grav\Framework\RequestHandler\Middlewares\MultipartRequestSupport-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
- 39. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
- 40. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Grav.php:297
- 41. Grav\Common\Grav-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\index.php:127
- 42. require() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\router.php:55
+  1. LogicException-&gt;() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Environment.php:295
+  2. Twig\Environment-&gt;setCache() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Environment.php:131
+  3. Twig\Environment-&gt;__construct() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Twig\Twig.php:208
+  4. Grav\Common\Twig\Twig-&gt;init() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\TwigProcessor.php:35
+  5. Grav\Common\Processors\TwigProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
+  6. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
+  7. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\AssetsProcessor.php:39
+  8. Grav\Common\Processors\AssetsProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
+  9. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
+ 10. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\SchedulerProcessor.php:38
+ 11. Grav\Common\Processors\SchedulerProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
+ 12. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
+ 13. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\BackupsProcessor.php:39
+ 14. Grav\Common\Processors\BackupsProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
+ 15. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
+ 16. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\TasksProcessor.php:69
+ 17. Grav\Common\Processors\TasksProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
+ 18. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
+ 19. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\RequestProcessor.php:64
+ 20. Grav\Common\Processors\RequestProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
+ 21. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
+ 22. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\ThemesProcessor.php:38
+ 23. Grav\Common\Processors\ThemesProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
+ 24. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
+ 25. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\PluginsProcessor.php:39
+ 26. Grav\Common\Processors\PluginsProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
+ 27. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
+ 28. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\InitializeProcessor.php:129
+ 29. Grav\Common\Processors\InitializeProcessor-&gt;Grav\Common\Processors\{closure}() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Debugger.php:650
+ 30. Grav\Common\Debugger-&gt;profile() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\InitializeProcessor.php:129
+ 31. Grav\Common\Processors\InitializeProcessor-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
+ 32. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
+ 33. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Middlewares\MultipartRequestSupport.php:40
+ 34. Grav\Framework\RequestHandler\Middlewares\MultipartRequestSupport-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
+ 35. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
+ 36. Grav\Framework\RequestHandler\RequestHandler-&gt;handle() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Grav.php:297
+ 37. Grav\Common\Grav-&gt;process() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\index.php:127
+ 38. require() C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\router.php:55
 
 
 
@@ -663,11 +659,11 @@ pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-
   <header>
   <div class="exception">
   <div class="exc-title">
-                  <span class="exc-title-primary">Error</span>
+                  <span class="exc-title-primary">LogicException</span>
                 </div>
 
   <div class="exc-message">
-          <span>Interface &quot;Twig\Cache\CacheInterface&quot; not found</span>
+          <span>Cache can only be a string, false, or a \Twig\Cache\CacheInterface implementation.</span>
 
 
       
@@ -676,7 +672,7 @@ pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-
     
     <ul class="search-for-help">
             <li>
-        <a rel="noopener noreferrer" target="_blank" href="https://google.com/search?q=Error+Interface+%22Twig%5CCache%5CCacheInterface%22+not+found" title="Search for help on Google.">
+        <a rel="noopener noreferrer" target="_blank" href="https://google.com/search?q=LogicException+Cache+can+only+be+a+string%2C+false%2C+or+a+%5CTwig%5CCache%5CCacheInterface+implementation." title="Search for help on Google.">
           <!-- Google icon by Alfredo H, from https://www.iconfinder.com/alfredoh -->
           <!-- Creative Commons (Attribution 3.0 Unported) -->
           <!-- http://creativecommons.org/licenses/by/3.0/ -->
@@ -686,7 +682,7 @@ pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-
         </a>
       </li>
       <li>
-        <a rel="noopener noreferrer" target="_blank" href="https://duckduckgo.com/?q=Error+Interface+%22Twig%5CCache%5CCacheInterface%22+not+found" title="Search for help on DuckDuckGo.">
+        <a rel="noopener noreferrer" target="_blank" href="https://duckduckgo.com/?q=LogicException+Cache+can+only+be+a+string%2C+false%2C+or+a+%5CTwig%5CCache%5CCacheInterface+implementation." title="Search for help on DuckDuckGo.">
           <!-- DuckDuckGo icon by IconBaandar Team, from https://www.iconfinder.com/iconbaandar -->
           <!-- Creative Commons (Attribution 3.0 Unported) -->
           <!-- http://creativecommons.org/licenses/by/3.0/ -->
@@ -700,7 +696,7 @@ pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-
         </a>
       </li>
       <li>
-        <a rel="noopener noreferrer" target="_blank" href="https://stackoverflow.com/search?q=Error+Interface+%22Twig%5CCache%5CCacheInterface%22+not+found" title="Search for help on Stack Overflow.">
+        <a rel="noopener noreferrer" target="_blank" href="https://stackoverflow.com/search?q=LogicException+Cache+can+only+be+a+string%2C+false%2C+or+a+%5CTwig%5CCache%5CCacheInterface+implementation." title="Search for help on Stack Overflow.">
           <!-- Stack Overflow icon by Picons.me, from https://www.iconfinder.com/Picons -->
           <!-- Free for commercial use -->
           <svg class="stackoverflow" height="16" viewBox="-1163 1657.697 56.693 56.693" width="16" xmlns="http://www.w3.org/2000/svg">
@@ -711,16 +707,12 @@ pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-
       </li>
     </ul>
 
-    <span id="plain-exception">Error thrown with message &quot;Interface &quot;Twig\Cache\CacheInterface&quot; not found&quot;
+    <span id="plain-exception">LogicException thrown with message &quot;Cache can only be a string, false, or a \Twig\Cache\CacheInterface implementation.&quot;
 
 Stacktrace:
-#41 Error in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Cache\FilesystemCache.php:8
-#40 include in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php:576
-#39 Composer\Autoload\{closure} in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php:427
-#38 Composer\Autoload\ClassLoader:loadClass in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Twig\Cache\ResilientFilesystemCache.php:18
-#37 include in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php:576
-#36 Composer\Autoload\{closure} in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php:427
-#35 Composer\Autoload\ClassLoader:loadClass in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Twig\Twig.php:194
+#37 LogicException in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Environment.php:295
+#36 Twig\Environment:setCache in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Environment.php:131
+#35 Twig\Environment:__construct in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Twig\Twig.php:208
 #34 Grav\Common\Twig\Twig:init in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\TwigProcessor.php:35
 #33 Grav\Common\Processors\TwigProcessor:process in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
 #32 Grav\Framework\RequestHandler\RequestHandler:handle in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
@@ -757,16 +749,12 @@ Stacktrace:
 #1 Grav\Common\Grav:process in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\index.php:127
 #0 require in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\router.php:55
 </span>
-    <button id="copy-button" class="rightButton clipboard" data-clipboard-text="Error thrown with message &quot;Interface &quot;Twig\Cache\CacheInterface&quot; not found&quot;
+    <button id="copy-button" class="rightButton clipboard" data-clipboard-text="LogicException thrown with message &quot;Cache can only be a string, false, or a \Twig\Cache\CacheInterface implementation.&quot;
 
 Stacktrace:
-#41 Error in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Cache\FilesystemCache.php:8
-#40 include in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php:576
-#39 Composer\Autoload\{closure} in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php:427
-#38 Composer\Autoload\ClassLoader:loadClass in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Twig\Cache\ResilientFilesystemCache.php:18
-#37 include in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php:576
-#36 Composer\Autoload\{closure} in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php:427
-#35 Composer\Autoload\ClassLoader:loadClass in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Twig\Twig.php:194
+#37 LogicException in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Environment.php:295
+#36 Twig\Environment:setCache in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Environment.php:131
+#35 Twig\Environment:__construct in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Twig\Twig.php:208
 #34 Grav\Common\Twig\Twig:init in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\TwigProcessor.php:35
 #33 Grav\Common\Processors\TwigProcessor:process in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:50
 #32 Grav\Framework\RequestHandler\RequestHandler:handle in C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php:62
@@ -813,95 +801,47 @@ Stacktrace:
 </header>
 <div class="frames-description ">
       <span>
-        Stack frames (42)
+        Stack frames (38)
     </span>
   </div>
 <div class="frames-container ">
     <div class="frame active " id="frame-line-0">
-      <span class="frame-index">41</span>
+      <span class="frame-index">37</span>
       <div class="frame-method-info">
-        <span class="frame-class"><span class="delimiter">Error</span></span>
+        <span class="frame-class"><span class="delimiter">LogicException</span></span>
         <span class="frame-function"><span class="delimiter"></span></span>
       </div>
 
     <div class="frame-file">
-        <span class="delimiter">&hellip;\vendor\twig\twig\src\Cache\FilesystemCache.php</span><!--
-   --><span class="frame-line">:8</span>
+        <span class="delimiter">&hellip;\vendor\twig\twig\src\Environment.php</span><!--
+   --><span class="frame-line">:295</span>
     </div>
   </div>
   <div class="frame  " id="frame-line-1">
-      <span class="frame-index">40</span>
+      <span class="frame-index">36</span>
       <div class="frame-method-info">
-        <span class="frame-class"><span class="delimiter"></span></span>
-        <span class="frame-function"><span class="delimiter">include</span></span>
+        <span class="frame-class"><span class="delimiter">Twig</span>\<span class="delimiter">Environment</span></span>
+        <span class="frame-function"><span class="delimiter">setCache</span></span>
       </div>
 
     <div class="frame-file">
-        <span class="delimiter">&hellip;\vendor\composer\ClassLoader.php</span><!--
-   --><span class="frame-line">:576</span>
+        <span class="delimiter">&hellip;\vendor\twig\twig\src\Environment.php</span><!--
+   --><span class="frame-line">:131</span>
     </div>
   </div>
   <div class="frame  " id="frame-line-2">
-      <span class="frame-index">39</span>
-      <div class="frame-method-info">
-        <span class="frame-class"><span class="delimiter"></span></span>
-        <span class="frame-function"><span class="delimiter">Composer</span>\<span class="delimiter">Autoload</span>\<span class="delimiter">{closure}</span></span>
-      </div>
-
-    <div class="frame-file">
-        <span class="delimiter">&hellip;\vendor\composer\ClassLoader.php</span><!--
-   --><span class="frame-line">:427</span>
-    </div>
-  </div>
-  <div class="frame  " id="frame-line-3">
-      <span class="frame-index">38</span>
-      <div class="frame-method-info">
-        <span class="frame-class"><span class="delimiter">Composer</span>\<span class="delimiter">Autoload</span>\<span class="delimiter">ClassLoader</span></span>
-        <span class="frame-function"><span class="delimiter">loadClass</span></span>
-      </div>
-
-    <div class="frame-file">
-        <span class="delimiter">&hellip;\system\src\Grav\Common\Twig\Cache\ResilientFilesystemCache.php</span><!--
-   --><span class="frame-line">:18</span>
-    </div>
-  </div>
-  <div class="frame  " id="frame-line-4">
-      <span class="frame-index">37</span>
-      <div class="frame-method-info">
-        <span class="frame-class"><span class="delimiter"></span></span>
-        <span class="frame-function"><span class="delimiter">include</span></span>
-      </div>
-
-    <div class="frame-file">
-        <span class="delimiter">&hellip;\vendor\composer\ClassLoader.php</span><!--
-   --><span class="frame-line">:576</span>
-    </div>
-  </div>
-  <div class="frame  " id="frame-line-5">
-      <span class="frame-index">36</span>
-      <div class="frame-method-info">
-        <span class="frame-class"><span class="delimiter"></span></span>
-        <span class="frame-function"><span class="delimiter">Composer</span>\<span class="delimiter">Autoload</span>\<span class="delimiter">{closure}</span></span>
-      </div>
-
-    <div class="frame-file">
-        <span class="delimiter">&hellip;\vendor\composer\ClassLoader.php</span><!--
-   --><span class="frame-line">:427</span>
-    </div>
-  </div>
-  <div class="frame  " id="frame-line-6">
       <span class="frame-index">35</span>
       <div class="frame-method-info">
-        <span class="frame-class"><span class="delimiter">Composer</span>\<span class="delimiter">Autoload</span>\<span class="delimiter">ClassLoader</span></span>
-        <span class="frame-function"><span class="delimiter">loadClass</span></span>
+        <span class="frame-class"><span class="delimiter">Twig</span>\<span class="delimiter">Environment</span></span>
+        <span class="frame-function"><span class="delimiter">__construct</span></span>
       </div>
 
     <div class="frame-file">
         <span class="delimiter">&hellip;\system\src\Grav\Common\Twig\Twig.php</span><!--
-   --><span class="frame-line">:194</span>
+   --><span class="frame-line">:208</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-7">
+  <div class="frame  " id="frame-line-3">
       <span class="frame-index">34</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Common</span>\<span class="delimiter">Twig</span>\<span class="delimiter">Twig</span></span>
@@ -913,7 +853,7 @@ Stacktrace:
    --><span class="frame-line">:35</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-8">
+  <div class="frame  " id="frame-line-4">
       <span class="frame-index">33</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Common</span>\<span class="delimiter">Processors</span>\<span class="delimiter">TwigProcessor</span></span>
@@ -925,7 +865,7 @@ Stacktrace:
    --><span class="frame-line">:50</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-9">
+  <div class="frame  " id="frame-line-5">
       <span class="frame-index">32</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -937,7 +877,7 @@ Stacktrace:
    --><span class="frame-line">:62</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-10">
+  <div class="frame  " id="frame-line-6">
       <span class="frame-index">31</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -949,7 +889,7 @@ Stacktrace:
    --><span class="frame-line">:39</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-11">
+  <div class="frame  " id="frame-line-7">
       <span class="frame-index">30</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Common</span>\<span class="delimiter">Processors</span>\<span class="delimiter">AssetsProcessor</span></span>
@@ -961,7 +901,7 @@ Stacktrace:
    --><span class="frame-line">:50</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-12">
+  <div class="frame  " id="frame-line-8">
       <span class="frame-index">29</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -973,7 +913,7 @@ Stacktrace:
    --><span class="frame-line">:62</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-13">
+  <div class="frame  " id="frame-line-9">
       <span class="frame-index">28</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -985,7 +925,7 @@ Stacktrace:
    --><span class="frame-line">:38</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-14">
+  <div class="frame  " id="frame-line-10">
       <span class="frame-index">27</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Common</span>\<span class="delimiter">Processors</span>\<span class="delimiter">SchedulerProcessor</span></span>
@@ -997,7 +937,7 @@ Stacktrace:
    --><span class="frame-line">:50</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-15">
+  <div class="frame  " id="frame-line-11">
       <span class="frame-index">26</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1009,7 +949,7 @@ Stacktrace:
    --><span class="frame-line">:62</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-16">
+  <div class="frame  " id="frame-line-12">
       <span class="frame-index">25</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1021,7 +961,7 @@ Stacktrace:
    --><span class="frame-line">:39</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-17">
+  <div class="frame  " id="frame-line-13">
       <span class="frame-index">24</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Common</span>\<span class="delimiter">Processors</span>\<span class="delimiter">BackupsProcessor</span></span>
@@ -1033,7 +973,7 @@ Stacktrace:
    --><span class="frame-line">:50</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-18">
+  <div class="frame  " id="frame-line-14">
       <span class="frame-index">23</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1045,7 +985,7 @@ Stacktrace:
    --><span class="frame-line">:62</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-19">
+  <div class="frame  " id="frame-line-15">
       <span class="frame-index">22</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1057,7 +997,7 @@ Stacktrace:
    --><span class="frame-line">:69</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-20">
+  <div class="frame  " id="frame-line-16">
       <span class="frame-index">21</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Common</span>\<span class="delimiter">Processors</span>\<span class="delimiter">TasksProcessor</span></span>
@@ -1069,7 +1009,7 @@ Stacktrace:
    --><span class="frame-line">:50</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-21">
+  <div class="frame  " id="frame-line-17">
       <span class="frame-index">20</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1081,7 +1021,7 @@ Stacktrace:
    --><span class="frame-line">:62</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-22">
+  <div class="frame  " id="frame-line-18">
       <span class="frame-index">19</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1093,7 +1033,7 @@ Stacktrace:
    --><span class="frame-line">:64</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-23">
+  <div class="frame  " id="frame-line-19">
       <span class="frame-index">18</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Common</span>\<span class="delimiter">Processors</span>\<span class="delimiter">RequestProcessor</span></span>
@@ -1105,7 +1045,7 @@ Stacktrace:
    --><span class="frame-line">:50</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-24">
+  <div class="frame  " id="frame-line-20">
       <span class="frame-index">17</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1117,7 +1057,7 @@ Stacktrace:
    --><span class="frame-line">:62</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-25">
+  <div class="frame  " id="frame-line-21">
       <span class="frame-index">16</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1129,7 +1069,7 @@ Stacktrace:
    --><span class="frame-line">:38</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-26">
+  <div class="frame  " id="frame-line-22">
       <span class="frame-index">15</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Common</span>\<span class="delimiter">Processors</span>\<span class="delimiter">ThemesProcessor</span></span>
@@ -1141,7 +1081,7 @@ Stacktrace:
    --><span class="frame-line">:50</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-27">
+  <div class="frame  " id="frame-line-23">
       <span class="frame-index">14</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1153,7 +1093,7 @@ Stacktrace:
    --><span class="frame-line">:62</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-28">
+  <div class="frame  " id="frame-line-24">
       <span class="frame-index">13</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1165,7 +1105,7 @@ Stacktrace:
    --><span class="frame-line">:39</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-29">
+  <div class="frame  " id="frame-line-25">
       <span class="frame-index">12</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Common</span>\<span class="delimiter">Processors</span>\<span class="delimiter">PluginsProcessor</span></span>
@@ -1177,7 +1117,7 @@ Stacktrace:
    --><span class="frame-line">:50</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-30">
+  <div class="frame  " id="frame-line-26">
       <span class="frame-index">11</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1189,7 +1129,7 @@ Stacktrace:
    --><span class="frame-line">:62</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-31">
+  <div class="frame  " id="frame-line-27">
       <span class="frame-index">10</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1201,7 +1141,7 @@ Stacktrace:
    --><span class="frame-line">:129</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-32">
+  <div class="frame  " id="frame-line-28">
       <span class="frame-index">9</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Common</span>\<span class="delimiter">Processors</span>\<span class="delimiter">InitializeProcessor</span></span>
@@ -1213,7 +1153,7 @@ Stacktrace:
    --><span class="frame-line">:650</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-33">
+  <div class="frame  " id="frame-line-29">
       <span class="frame-index">8</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Common</span>\<span class="delimiter">Debugger</span></span>
@@ -1225,7 +1165,7 @@ Stacktrace:
    --><span class="frame-line">:129</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-34">
+  <div class="frame  " id="frame-line-30">
       <span class="frame-index">7</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Common</span>\<span class="delimiter">Processors</span>\<span class="delimiter">InitializeProcessor</span></span>
@@ -1237,7 +1177,7 @@ Stacktrace:
    --><span class="frame-line">:50</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-35">
+  <div class="frame  " id="frame-line-31">
       <span class="frame-index">6</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1249,7 +1189,7 @@ Stacktrace:
    --><span class="frame-line">:62</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-36">
+  <div class="frame  " id="frame-line-32">
       <span class="frame-index">5</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1261,7 +1201,7 @@ Stacktrace:
    --><span class="frame-line">:40</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-37">
+  <div class="frame  " id="frame-line-33">
       <span class="frame-index">4</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">Middlewares</span>\<span class="delimiter">MultipartRequestSupport</span></span>
@@ -1273,7 +1213,7 @@ Stacktrace:
    --><span class="frame-line">:50</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-38">
+  <div class="frame  " id="frame-line-34">
       <span class="frame-index">3</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1285,7 +1225,7 @@ Stacktrace:
    --><span class="frame-line">:62</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-39">
+  <div class="frame  " id="frame-line-35">
       <span class="frame-index">2</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Framework</span>\<span class="delimiter">RequestHandler</span>\<span class="delimiter">RequestHandler</span></span>
@@ -1297,7 +1237,7 @@ Stacktrace:
    --><span class="frame-line">:297</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-40">
+  <div class="frame  " id="frame-line-36">
       <span class="frame-index">1</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter">Grav</span>\<span class="delimiter">Common</span>\<span class="delimiter">Grav</span></span>
@@ -1309,7 +1249,7 @@ Stacktrace:
    --><span class="frame-line">:127</span>
     </div>
   </div>
-  <div class="frame  " id="frame-line-41">
+  <div class="frame  " id="frame-line-37">
       <span class="frame-index">0</span>
       <div class="frame-method-info">
         <span class="frame-class"><span class="delimiter"></span></span>
@@ -1326,60 +1266,60 @@ Stacktrace:
   <div class="frame-code-container ">
             <div class="frame-code active" id="frame-code-0">
         <div class="frame-file">
-                                <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Cache\FilesystemCache.php</span></strong>
+                                <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Environment.php</span></strong>
                   </div>
                     <pre class="code-block line-numbers"
-              data-line="8"
-              data-line-offset="1"
-              data-start="1"
-            ><code class="language-php">&lt;?php
- 
-namespace Twig\Cache;
- 
-/**
- * Compatibility class for Twig 3 FilesystemCache
- */
-class FilesystemCache implements CacheInterface
-{
-    private string $directory;
-    private int $options;
- 
-    public const FORCE_BYTECODE_INVALIDATION = 1;
- 
-    public function __construct(string $directory, int $options = 0)
+              data-line="295"
+              data-line-offset="276"
+              data-start="276"
+            ><code class="language-php">     * Sets the current cache implementation.
+     *
+     * @param CacheInterface|string|false $cache A Twig\Cache\CacheInterface implementation,
+     *                                           an absolute path to the compiled templates,
+     *                                           or false to disable cache
+     *
+     * @return void
+     */
+    public function setCache($cache)
     {
-        $this-&gt;directory = $directory;
-        $this-&gt;options = $options;
-    }
- 
-    public function generateKey(string $name, string $className): string
-    {
-        return $this-&gt;directory . &#039;/&#039; . md5($name . $className) . &#039;.php&#039;;
-    }
- 
-    public function write(string $key, string $content): void
-    {
-        $dir = dirname($key);
-        if (!is_dir($dir)) {
-            @mkdir($dir, 0777, true);
+        if (\is_string($cache)) {
+            $this-&gt;originalCache = $cache;
+            $this-&gt;cache = new FilesystemCache($cache, $this-&gt;autoReload ? FilesystemCache::FORCE_BYTECODE_INVALIDATION : 0);
+        } elseif (false === $cache) {
+            $this-&gt;originalCache = $cache;
+            $this-&gt;cache = new NullCache();
+        } elseif ($cache instanceof CacheInterface) {
+            $this-&gt;originalCache = $this-&gt;cache = $cache;
+        } else {
+            throw new \LogicException(&#039;Cache can only be a string, false, or a \Twig\Cache\CacheInterface implementation.&#039;);
         }
-        $tmp = tempnam($dir, &#039;tmp&#039;);
-        if (false !== @file_put_contents($tmp, $content) &amp;&amp; @rename($tmp, $key)) {
-            @chmod($key, 0666);
-            return;
-        }
-        @unlink($tmp);
     }
  
-    public function load(string $key): void</code></pre>
+    /**
+     * Gets the template class associated with the given string.
+     *
+     * The generated template class is based on the following parameters:
+     *
+     *  * The cache key for the given template;
+     *  * The currently enabled extensions;
+     *  * PHP version;
+     *  * Twig version;
+     *  * Options with what environment was created.
+     *
+     * @param string   $name  The name for which to calculate the template class name
+     * @param int|null $index The index if it is an embedded template
+     *
+     * @internal
+     */
+    public function getTemplateClass(string $name, ?int $index = null): string</code></pre>
 
                   
                           <div class="frame-file">
               Arguments
           </div>
           <div id="frame-code-args-0" class="code-block frame-args">
-              <ol class="linenums"><li><script> Sfdump = window.Sfdump || (function (doc) { doc.documentElement.classList.add('sf-js-enabled'); var rxEsc = /([.*+?^${}()|\[\]\/\\])/g, idRx = /\bsf-dump-\d+-ref[012]\w+\b/, keyHint = 0 <= navigator.platform.toUpperCase().indexOf('MAC') ? 'Cmd' : 'Ctrl', addEventListener = function (e, n, cb) { e.addEventListener(n, cb, false); }; if (!doc.addEventListener) { addEventListener = function (element, eventName, callback) { element.attachEvent('on' + eventName, function (e) { e.preventDefault = function () {e.returnValue = false;}; e.target = e.srcElement; callback(e); }); }; } function toggle(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className, arrow, newClass; if (/\bsf-dump-compact\b/.test(oldClass)) { arrow = '&#9660;'; newClass = 'sf-dump-expanded'; } else if (/\bsf-dump-expanded\b/.test(oldClass)) { arrow = '&#9654;'; newClass = 'sf-dump-compact'; } else { return false; } if (doc.createEvent && s.dispatchEvent) { var event = doc.createEvent('Event'); event.initEvent('sf-dump-expanded' === newClass ? 'sfbeforedumpexpand' : 'sfbeforedumpcollapse', true, false); s.dispatchEvent(event); } a.lastChild.innerHTML = arrow; s.className = s.className.replace(/\bsf-dump-(compact|expanded)\b/, newClass); if (recursive) { try { a = s.querySelectorAll('.'+oldClass); for (s = 0; s < a.length; ++s) { if (-1 == a[s].className.indexOf(newClass)) { a[s].className = newClass; a[s].previousSibling.lastChild.innerHTML = arrow; } } } catch (e) { } } return true; }; function collapse(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-expanded\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function expand(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-compact\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function collapseAll(root) { var a = root.querySelector('a.sf-dump-toggle'); if (a) { collapse(a, true); expand(a); return true; } return false; } function reveal(node) { var previous, parents = []; while ((node = node.parentNode || {}) && (previous = node.previousSibling) && 'A' === previous.tagName) { parents.push(previous); } if (0 !== parents.length) { parents.forEach(function (parent) { expand(parent); }); return true; } return false; } function highlight(root, activeNode, nodes) { resetHighlightedNodes(root); Array.from(nodes||[]).forEach(function (node) { if (!/\bsf-dump-highlight\b/.test(node.className)) { node.className = node.className + ' sf-dump-highlight'; } }); if (!/\bsf-dump-highlight-active\b/.test(activeNode.className)) { activeNode.className = activeNode.className + ' sf-dump-highlight-active'; } } function resetHighlightedNodes(root) { Array.from(root.querySelectorAll('.sf-dump-str, .sf-dump-key, .sf-dump-public, .sf-dump-protected, .sf-dump-private')).forEach(function (strNode) { strNode.className = strNode.className.replace(/\bsf-dump-highlight\b/, ''); strNode.className = strNode.className.replace(/\bsf-dump-highlight-active\b/, ''); }); } return function (root, x) { root = doc.getElementById(root); var indentRx = new RegExp('^('+(root.getAttribute('data-indent-pad') || ' ').replace(rxEsc, '\\$1')+')+', 'm'), options = {"maxDepth":1,"maxStringLength":160,"fileLinkFormat":false}, elt = root.getElementsByTagName('A'), len = elt.length, i = 0, s, h, t = []; while (i < len) t.push(elt[i++]); for (i in x) { options[i] = x[i]; } function a(e, f) { addEventListener(root, e, function (e, n) { if ('A' == e.target.tagName) { f(e.target, e); } else if ('A' == e.target.parentNode.tagName) { f(e.target.parentNode, e); } else { n = /\bsf-dump-ellipsis\b/.test(e.target.className) ? e.target.parentNode : e.target; if ((n = n.nextElementSibling) && 'A' == n.tagName) { if (!/\bsf-dump-toggle\b/.test(n.className)) { n = n.nextElementSibling || n; } f(n, e, true); } } }); }; function isCtrlKey(e) { return e.ctrlKey || e.metaKey; } function xpathString(str) { var parts = str.match(/[^'"]+|['"]/g).map(function (part) { if ("'" == part) { return '"\'"'; } if ('"' == part) { return "'\"'"; } return "'" + part + "'"; }); return "concat(" + parts.join(",") + ", '')"; } function xpathHasClass(className) { return "contains(concat(' ', normalize-space(@class), ' '), ' " + className +" ')"; } a('mouseover', function (a, e, c) { if (c) { e.target.style.cursor = "pointer"; } }); a('click', function (a, e, c) { if (/\bsf-dump-toggle\b/.test(a.className)) { e.preventDefault(); if (!toggle(a, isCtrlKey(e))) { var r = doc.getElementById(a.getAttribute('href').slice(1)), s = r.previousSibling, f = r.parentNode, t = a.parentNode; t.replaceChild(r, a); f.replaceChild(a, s); t.insertBefore(s, r); f = f.firstChild.nodeValue.match(indentRx); t = t.firstChild.nodeValue.match(indentRx); if (f && t && f[0] !== t[0]) { r.innerHTML = r.innerHTML.replace(new RegExp('^'+f[0].replace(rxEsc, '\\$1'), 'mg'), t[0]); } if (/\bsf-dump-compact\b/.test(r.className)) { toggle(s, isCtrlKey(e)); } } if (c) { } else if (doc.getSelection) { try { doc.getSelection().removeAllRanges(); } catch (e) { doc.getSelection().empty(); } } else { doc.selection.empty(); } } else if (/\bsf-dump-str-toggle\b/.test(a.className)) { e.preventDefault(); e = a.parentNode.parentNode; e.className = e.className.replace(/\bsf-dump-str-(expand|collapse)\b/, a.parentNode.className); } }); elt = root.getElementsByTagName('SAMP'); len = elt.length; i = 0; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; if ('SAMP' == elt.tagName) { a = elt.previousSibling || {}; if ('A' != a.tagName) { a = doc.createElement('A'); a.className = 'sf-dump-ref'; elt.parentNode.insertBefore(a, elt); } else { a.innerHTML += ' '; } a.title = (a.title ? a.title+'\n[' : '[')+keyHint+'+click] Expand all children'; a.innerHTML += elt.className == 'sf-dump-compact' ? '<span>&#9654;</span>' : '<span>&#9660;</span>'; a.className += ' sf-dump-toggle'; x = 1; if ('sf-dump' != elt.parentNode.className) { x += elt.parentNode.getAttribute('data-depth')/1; } } else if (/\bsf-dump-ref\b/.test(elt.className) && (a = elt.getAttribute('href'))) { a = a.slice(1); elt.className += ' sf-dump-hover'; elt.className += ' '+a; if (/[\[{]$/.test(elt.previousSibling.nodeValue)) { a = a != elt.nextSibling.id && doc.getElementById(a); try { s = a.nextSibling; elt.appendChild(a); s.parentNode.insertBefore(a, s); if (/^[@#]/.test(elt.innerHTML)) { elt.innerHTML += ' <span>&#9654;</span>'; } else { elt.innerHTML = '<span>&#9654;</span>'; elt.className = 'sf-dump-ref'; } elt.className += ' sf-dump-toggle'; } catch (e) { if ('&' == elt.innerHTML.charAt(0)) { elt.innerHTML = '&#8230;'; elt.className = 'sf-dump-ref'; } } } } } if (doc.evaluate && Array.from && root.children.length > 1) { root.setAttribute('tabindex', 0); SearchState = function () { this.nodes = []; this.idx = 0; }; SearchState.prototype = { next: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx < (this.nodes.length - 1) ? this.idx + 1 : 0; return this.current(); }, previous: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx > 0 ? this.idx - 1 : (this.nodes.length - 1); return this.current(); }, isEmpty: function () { return 0 === this.count(); }, current: function () { if (this.isEmpty()) { return null; } return this.nodes[this.idx]; }, reset: function () { this.nodes = []; this.idx = 0; }, count: function () { return this.nodes.length; }, }; function showCurrent(state) { var currentNode = state.current(), currentRect, searchRect; if (currentNode) { reveal(currentNode); highlight(root, currentNode, state.nodes); if ('scrollIntoView' in currentNode) { currentNode.scrollIntoView(true); currentRect = currentNode.getBoundingClientRect(); searchRect = search.getBoundingClientRect(); if (currentRect.top < (searchRect.top + searchRect.height)) { window.scrollBy(0, -(searchRect.top + searchRect.height + 5)); } } } counter.textContent = (state.isEmpty() ? 0 : state.idx + 1) + ' of ' + state.count(); } var search = doc.createElement('div'); search.className = 'sf-dump-search-wrapper sf-dump-search-hidden'; search.innerHTML = ' <input type="text" class="sf-dump-search-input"> <span class="sf-dump-search-count">0 of 0<\/span> <button type="button" class="sf-dump-search-input-previous" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19L896 965l-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> <button type="button" class="sf-dump-search-input-next" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> '; root.insertBefore(search, root.firstChild); var state = new SearchState(); var searchInput = search.querySelector('.sf-dump-search-input'); var counter = search.querySelector('.sf-dump-search-count'); var searchInputTimer = 0; var previousSearchQuery = ''; addEventListener(searchInput, 'keyup', function (e) { var searchQuery = e.target.value; /* Don't perform anything if the pressed key didn't change the query */ if (searchQuery === previousSearchQuery) { return; } previousSearchQuery = searchQuery; clearTimeout(searchInputTimer); searchInputTimer = setTimeout(function () { state.reset(); collapseAll(root); resetHighlightedNodes(root); if ('' === searchQuery) { counter.textContent = '0 of 0'; return; } var classMatches = [ "sf-dump-str", "sf-dump-key", "sf-dump-public", "sf-dump-protected", "sf-dump-private", ].map(xpathHasClass).join(' or '); var xpathResult = doc.evaluate('.//span[' + classMatches + '][contains(translate(child::text(), ' + xpathString(searchQuery.toUpperCase()) + ', ' + xpathString(searchQuery.toLowerCase()) + '), ' + xpathString(searchQuery.toLowerCase()) + ')]', root, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null); while (node = xpathResult.iterateNext()) state.nodes.push(node); showCurrent(state); }, 400); }); Array.from(search.querySelectorAll('.sf-dump-search-input-next, .sf-dump-search-input-previous')).forEach(function (btn) { addEventListener(btn, 'click', function (e) { e.preventDefault(); -1 !== e.target.className.indexOf('next') ? state.next() : state.previous(); searchInput.focus(); collapseAll(root); showCurrent(state); }) }); addEventListener(root, 'keydown', function (e) { var isSearchActive = !/\bsf-dump-search-hidden\b/.test(search.className); if ((114 === e.keyCode && !isSearchActive) || (isCtrlKey(e) && 70 === e.keyCode)) { /* F3 or CMD/CTRL + F */ if (70 === e.keyCode && document.activeElement === searchInput) { /* * If CMD/CTRL + F is hit while having focus on search input, * the user probably meant to trigger browser search instead. * Let the browser execute its behavior: */ return; } e.preventDefault(); search.className = search.className.replace(/\bsf-dump-search-hidden\b/, ''); searchInput.focus(); } else if (isSearchActive) { if (27 === e.keyCode) { /* ESC key */ search.className += ' sf-dump-search-hidden'; e.preventDefault(); resetHighlightedNodes(root); searchInput.value = ''; } else if ( (isCtrlKey(e) && 71 === e.keyCode) /* CMD/CTRL + G */ || 13 === e.keyCode /* Enter */ || 114 === e.keyCode /* F3 */ ) { e.preventDefault(); e.shiftKey ? state.previous() : state.next(); collapseAll(root); showCurrent(state); } } }); } if (0 >= options.maxStringLength) { return; } try { elt = root.querySelectorAll('.sf-dump-str'); len = elt.length; i = 0; t = []; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; s = elt.innerText || elt.textContent; x = s.length - options.maxStringLength; if (0 < x) { h = elt.innerHTML; elt[elt.innerText ? 'innerText' : 'textContent'] = s.substring(0, options.maxStringLength); elt.className += ' sf-dump-str-collapse'; elt.innerHTML = '<span class=sf-dump-str-collapse>'+h+'<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> &#9664;</a></span>'+ '<span class=sf-dump-str-expand>'+elt.innerHTML+'<a class="sf-dump-ref sf-dump-str-toggle" title="'+x+' remaining characters"> &#9654;</a></span>'; } } } catch (e) { } }; })(document); </script><style> .sf-js-enabled pre.sf-dump .sf-dump-compact, .sf-js-enabled .sf-dump-str-collapse .sf-dump-str-collapse, .sf-js-enabled .sf-dump-str-expand .sf-dump-str-expand { display: none; } .sf-dump-hover:hover { background-color: #B729D9; color: #FFF !important; border-radius: 2px; } pre.sf-dump { display: block; white-space: pre; padding: 5px; overflow: initial !important; } pre.sf-dump:after { content: ""; visibility: hidden; display: block; height: 0; clear: both; } pre.sf-dump .sf-dump-ellipsization { display: inline-flex; } pre.sf-dump a { text-decoration: none; cursor: pointer; border: 0; outline: none; color: inherit; } pre.sf-dump img { max-width: 50em; max-height: 50em; margin: .5em 0 0 0; padding: 0; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAHUlEQVQY02O8zAABilCaiQEN0EeA8QuUcX9g3QEAAjcC5piyhyEAAAAASUVORK5CYII=) #D3D3D3; } pre.sf-dump .sf-dump-ellipsis { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; } pre.sf-dump .sf-dump-ellipsis-tail { flex-shrink: 0; } pre.sf-dump code { display:inline; padding:0; background:none; } .sf-dump-public.sf-dump-highlight, .sf-dump-protected.sf-dump-highlight, .sf-dump-private.sf-dump-highlight, .sf-dump-str.sf-dump-highlight, .sf-dump-key.sf-dump-highlight { background: rgba(111, 172, 204, 0.3); border: 1px solid #7DA0B1; border-radius: 3px; } .sf-dump-public.sf-dump-highlight-active, .sf-dump-protected.sf-dump-highlight-active, .sf-dump-private.sf-dump-highlight-active, .sf-dump-str.sf-dump-highlight-active, .sf-dump-key.sf-dump-highlight-active { background: rgba(253, 175, 0, 0.4); border: 1px solid #ffa500; border-radius: 3px; } pre.sf-dump .sf-dump-search-hidden { display: none !important; } pre.sf-dump .sf-dump-search-wrapper { font-size: 0; white-space: nowrap; margin-bottom: 5px; display: flex; position: -webkit-sticky; position: sticky; top: 5px; } pre.sf-dump .sf-dump-search-wrapper > * { vertical-align: top; box-sizing: border-box; height: 21px; font-weight: normal; border-radius: 0; background: #FFF; color: #757575; border: 1px solid #BBB; } pre.sf-dump .sf-dump-search-wrapper > input.sf-dump-search-input { padding: 3px; height: 21px; font-size: 12px; border-right: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px; color: #000; min-width: 15px; width: 100%; } pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next, pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous { background: #F2F2F2; outline: none; border-left: none; font-size: 0; line-height: 0; } pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next { border-top-right-radius: 3px; border-bottom-right-radius: 3px; } pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next > svg, pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous > svg { pointer-events: none; width: 12px; height: 12px; } pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-count { display: inline-block; padding: 0 5px; margin: 0; border-left: none; line-height: 21px; font-size: 12px; }pre.sf-dump, pre.sf-dump .sf-dump-default{color:#FFFFFF; line-height:normal; font:12px "Inconsolata", "Fira Mono", "Source Code Pro", Monaco, Consolas, "Lucida Console", monospace !important; word-wrap: break-word; white-space: pre-wrap; position:relative; z-index:99999; word-break: normal}pre.sf-dump .sf-dump-num{color:#BCD42A}pre.sf-dump .sf-dump-const{color: #4bb1b1;}pre.sf-dump .sf-dump-str{color:#BCD42A}pre.sf-dump .sf-dump-note{color:#ef7c61}pre.sf-dump .sf-dump-ref{color:#A0A0A0}pre.sf-dump .sf-dump-public{color:#FFFFFF}pre.sf-dump .sf-dump-protected{color:#FFFFFF}pre.sf-dump .sf-dump-private{color:#FFFFFF}pre.sf-dump .sf-dump-meta{color:#FFFFFF}pre.sf-dump .sf-dump-key{color:#BCD42A}pre.sf-dump .sf-dump-index{color:#ef7c61}pre.sf-dump .sf-dump-virtual{font-style:italic}pre.sf-dump .sf-dump-ellipsis{color:#FF8400}pre.sf-dump .sf-dump-ns{user-select:none;}pre.sf-dump .sf-dump-ellipsis-note{color:#ef7c61}</style><pre class=sf-dump id=sf-dump-1469915712 data-indent-pad="  ">"<span class=sf-dump-str title="47 characters">Interface &quot;Twig\Cache\CacheInterface&quot; not found</span>"
-</pre><script>Sfdump("sf-dump-1469915712")</script>
+              <ol class="linenums"><li><script> Sfdump = window.Sfdump || (function (doc) { doc.documentElement.classList.add('sf-js-enabled'); var rxEsc = /([.*+?^${}()|\[\]\/\\])/g, idRx = /\bsf-dump-\d+-ref[012]\w+\b/, keyHint = 0 <= navigator.platform.toUpperCase().indexOf('MAC') ? 'Cmd' : 'Ctrl', addEventListener = function (e, n, cb) { e.addEventListener(n, cb, false); }; if (!doc.addEventListener) { addEventListener = function (element, eventName, callback) { element.attachEvent('on' + eventName, function (e) { e.preventDefault = function () {e.returnValue = false;}; e.target = e.srcElement; callback(e); }); }; } function toggle(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className, arrow, newClass; if (/\bsf-dump-compact\b/.test(oldClass)) { arrow = '&#9660;'; newClass = 'sf-dump-expanded'; } else if (/\bsf-dump-expanded\b/.test(oldClass)) { arrow = '&#9654;'; newClass = 'sf-dump-compact'; } else { return false; } if (doc.createEvent && s.dispatchEvent) { var event = doc.createEvent('Event'); event.initEvent('sf-dump-expanded' === newClass ? 'sfbeforedumpexpand' : 'sfbeforedumpcollapse', true, false); s.dispatchEvent(event); } a.lastChild.innerHTML = arrow; s.className = s.className.replace(/\bsf-dump-(compact|expanded)\b/, newClass); if (recursive) { try { a = s.querySelectorAll('.'+oldClass); for (s = 0; s < a.length; ++s) { if (-1 == a[s].className.indexOf(newClass)) { a[s].className = newClass; a[s].previousSibling.lastChild.innerHTML = arrow; } } } catch (e) { } } return true; }; function collapse(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-expanded\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function expand(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-compact\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function collapseAll(root) { var a = root.querySelector('a.sf-dump-toggle'); if (a) { collapse(a, true); expand(a); return true; } return false; } function reveal(node) { var previous, parents = []; while ((node = node.parentNode || {}) && (previous = node.previousSibling) && 'A' === previous.tagName) { parents.push(previous); } if (0 !== parents.length) { parents.forEach(function (parent) { expand(parent); }); return true; } return false; } function highlight(root, activeNode, nodes) { resetHighlightedNodes(root); Array.from(nodes||[]).forEach(function (node) { if (!/\bsf-dump-highlight\b/.test(node.className)) { node.className = node.className + ' sf-dump-highlight'; } }); if (!/\bsf-dump-highlight-active\b/.test(activeNode.className)) { activeNode.className = activeNode.className + ' sf-dump-highlight-active'; } } function resetHighlightedNodes(root) { Array.from(root.querySelectorAll('.sf-dump-str, .sf-dump-key, .sf-dump-public, .sf-dump-protected, .sf-dump-private')).forEach(function (strNode) { strNode.className = strNode.className.replace(/\bsf-dump-highlight\b/, ''); strNode.className = strNode.className.replace(/\bsf-dump-highlight-active\b/, ''); }); } return function (root, x) { root = doc.getElementById(root); var indentRx = new RegExp('^('+(root.getAttribute('data-indent-pad') || ' ').replace(rxEsc, '\\$1')+')+', 'm'), options = {"maxDepth":1,"maxStringLength":160,"fileLinkFormat":false}, elt = root.getElementsByTagName('A'), len = elt.length, i = 0, s, h, t = []; while (i < len) t.push(elt[i++]); for (i in x) { options[i] = x[i]; } function a(e, f) { addEventListener(root, e, function (e, n) { if ('A' == e.target.tagName) { f(e.target, e); } else if ('A' == e.target.parentNode.tagName) { f(e.target.parentNode, e); } else { n = /\bsf-dump-ellipsis\b/.test(e.target.className) ? e.target.parentNode : e.target; if ((n = n.nextElementSibling) && 'A' == n.tagName) { if (!/\bsf-dump-toggle\b/.test(n.className)) { n = n.nextElementSibling || n; } f(n, e, true); } } }); }; function isCtrlKey(e) { return e.ctrlKey || e.metaKey; } function xpathString(str) { var parts = str.match(/[^'"]+|['"]/g).map(function (part) { if ("'" == part) { return '"\'"'; } if ('"' == part) { return "'\"'"; } return "'" + part + "'"; }); return "concat(" + parts.join(",") + ", '')"; } function xpathHasClass(className) { return "contains(concat(' ', normalize-space(@class), ' '), ' " + className +" ')"; } a('mouseover', function (a, e, c) { if (c) { e.target.style.cursor = "pointer"; } }); a('click', function (a, e, c) { if (/\bsf-dump-toggle\b/.test(a.className)) { e.preventDefault(); if (!toggle(a, isCtrlKey(e))) { var r = doc.getElementById(a.getAttribute('href').slice(1)), s = r.previousSibling, f = r.parentNode, t = a.parentNode; t.replaceChild(r, a); f.replaceChild(a, s); t.insertBefore(s, r); f = f.firstChild.nodeValue.match(indentRx); t = t.firstChild.nodeValue.match(indentRx); if (f && t && f[0] !== t[0]) { r.innerHTML = r.innerHTML.replace(new RegExp('^'+f[0].replace(rxEsc, '\\$1'), 'mg'), t[0]); } if (/\bsf-dump-compact\b/.test(r.className)) { toggle(s, isCtrlKey(e)); } } if (c) { } else if (doc.getSelection) { try { doc.getSelection().removeAllRanges(); } catch (e) { doc.getSelection().empty(); } } else { doc.selection.empty(); } } else if (/\bsf-dump-str-toggle\b/.test(a.className)) { e.preventDefault(); e = a.parentNode.parentNode; e.className = e.className.replace(/\bsf-dump-str-(expand|collapse)\b/, a.parentNode.className); } }); elt = root.getElementsByTagName('SAMP'); len = elt.length; i = 0; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; if ('SAMP' == elt.tagName) { a = elt.previousSibling || {}; if ('A' != a.tagName) { a = doc.createElement('A'); a.className = 'sf-dump-ref'; elt.parentNode.insertBefore(a, elt); } else { a.innerHTML += ' '; } a.title = (a.title ? a.title+'\n[' : '[')+keyHint+'+click] Expand all children'; a.innerHTML += elt.className == 'sf-dump-compact' ? '<span>&#9654;</span>' : '<span>&#9660;</span>'; a.className += ' sf-dump-toggle'; x = 1; if ('sf-dump' != elt.parentNode.className) { x += elt.parentNode.getAttribute('data-depth')/1; } } else if (/\bsf-dump-ref\b/.test(elt.className) && (a = elt.getAttribute('href'))) { a = a.slice(1); elt.className += ' sf-dump-hover'; elt.className += ' '+a; if (/[\[{]$/.test(elt.previousSibling.nodeValue)) { a = a != elt.nextSibling.id && doc.getElementById(a); try { s = a.nextSibling; elt.appendChild(a); s.parentNode.insertBefore(a, s); if (/^[@#]/.test(elt.innerHTML)) { elt.innerHTML += ' <span>&#9654;</span>'; } else { elt.innerHTML = '<span>&#9654;</span>'; elt.className = 'sf-dump-ref'; } elt.className += ' sf-dump-toggle'; } catch (e) { if ('&' == elt.innerHTML.charAt(0)) { elt.innerHTML = '&#8230;'; elt.className = 'sf-dump-ref'; } } } } } if (doc.evaluate && Array.from && root.children.length > 1) { root.setAttribute('tabindex', 0); SearchState = function () { this.nodes = []; this.idx = 0; }; SearchState.prototype = { next: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx < (this.nodes.length - 1) ? this.idx + 1 : 0; return this.current(); }, previous: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx > 0 ? this.idx - 1 : (this.nodes.length - 1); return this.current(); }, isEmpty: function () { return 0 === this.count(); }, current: function () { if (this.isEmpty()) { return null; } return this.nodes[this.idx]; }, reset: function () { this.nodes = []; this.idx = 0; }, count: function () { return this.nodes.length; }, }; function showCurrent(state) { var currentNode = state.current(), currentRect, searchRect; if (currentNode) { reveal(currentNode); highlight(root, currentNode, state.nodes); if ('scrollIntoView' in currentNode) { currentNode.scrollIntoView(true); currentRect = currentNode.getBoundingClientRect(); searchRect = search.getBoundingClientRect(); if (currentRect.top < (searchRect.top + searchRect.height)) { window.scrollBy(0, -(searchRect.top + searchRect.height + 5)); } } } counter.textContent = (state.isEmpty() ? 0 : state.idx + 1) + ' of ' + state.count(); } var search = doc.createElement('div'); search.className = 'sf-dump-search-wrapper sf-dump-search-hidden'; search.innerHTML = ' <input type="text" class="sf-dump-search-input"> <span class="sf-dump-search-count">0 of 0<\/span> <button type="button" class="sf-dump-search-input-previous" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19L896 965l-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> <button type="button" class="sf-dump-search-input-next" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> '; root.insertBefore(search, root.firstChild); var state = new SearchState(); var searchInput = search.querySelector('.sf-dump-search-input'); var counter = search.querySelector('.sf-dump-search-count'); var searchInputTimer = 0; var previousSearchQuery = ''; addEventListener(searchInput, 'keyup', function (e) { var searchQuery = e.target.value; /* Don't perform anything if the pressed key didn't change the query */ if (searchQuery === previousSearchQuery) { return; } previousSearchQuery = searchQuery; clearTimeout(searchInputTimer); searchInputTimer = setTimeout(function () { state.reset(); collapseAll(root); resetHighlightedNodes(root); if ('' === searchQuery) { counter.textContent = '0 of 0'; return; } var classMatches = [ "sf-dump-str", "sf-dump-key", "sf-dump-public", "sf-dump-protected", "sf-dump-private", ].map(xpathHasClass).join(' or '); var xpathResult = doc.evaluate('.//span[' + classMatches + '][contains(translate(child::text(), ' + xpathString(searchQuery.toUpperCase()) + ', ' + xpathString(searchQuery.toLowerCase()) + '), ' + xpathString(searchQuery.toLowerCase()) + ')]', root, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null); while (node = xpathResult.iterateNext()) state.nodes.push(node); showCurrent(state); }, 400); }); Array.from(search.querySelectorAll('.sf-dump-search-input-next, .sf-dump-search-input-previous')).forEach(function (btn) { addEventListener(btn, 'click', function (e) { e.preventDefault(); -1 !== e.target.className.indexOf('next') ? state.next() : state.previous(); searchInput.focus(); collapseAll(root); showCurrent(state); }) }); addEventListener(root, 'keydown', function (e) { var isSearchActive = !/\bsf-dump-search-hidden\b/.test(search.className); if ((114 === e.keyCode && !isSearchActive) || (isCtrlKey(e) && 70 === e.keyCode)) { /* F3 or CMD/CTRL + F */ if (70 === e.keyCode && document.activeElement === searchInput) { /* * If CMD/CTRL + F is hit while having focus on search input, * the user probably meant to trigger browser search instead. * Let the browser execute its behavior: */ return; } e.preventDefault(); search.className = search.className.replace(/\bsf-dump-search-hidden\b/, ''); searchInput.focus(); } else if (isSearchActive) { if (27 === e.keyCode) { /* ESC key */ search.className += ' sf-dump-search-hidden'; e.preventDefault(); resetHighlightedNodes(root); searchInput.value = ''; } else if ( (isCtrlKey(e) && 71 === e.keyCode) /* CMD/CTRL + G */ || 13 === e.keyCode /* Enter */ || 114 === e.keyCode /* F3 */ ) { e.preventDefault(); e.shiftKey ? state.previous() : state.next(); collapseAll(root); showCurrent(state); } } }); } if (0 >= options.maxStringLength) { return; } try { elt = root.querySelectorAll('.sf-dump-str'); len = elt.length; i = 0; t = []; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; s = elt.innerText || elt.textContent; x = s.length - options.maxStringLength; if (0 < x) { h = elt.innerHTML; elt[elt.innerText ? 'innerText' : 'textContent'] = s.substring(0, options.maxStringLength); elt.className += ' sf-dump-str-collapse'; elt.innerHTML = '<span class=sf-dump-str-collapse>'+h+'<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> &#9664;</a></span>'+ '<span class=sf-dump-str-expand>'+elt.innerHTML+'<a class="sf-dump-ref sf-dump-str-toggle" title="'+x+' remaining characters"> &#9654;</a></span>'; } } } catch (e) { } }; })(document); </script><style> .sf-js-enabled pre.sf-dump .sf-dump-compact, .sf-js-enabled .sf-dump-str-collapse .sf-dump-str-collapse, .sf-js-enabled .sf-dump-str-expand .sf-dump-str-expand { display: none; } .sf-dump-hover:hover { background-color: #B729D9; color: #FFF !important; border-radius: 2px; } pre.sf-dump { display: block; white-space: pre; padding: 5px; overflow: initial !important; } pre.sf-dump:after { content: ""; visibility: hidden; display: block; height: 0; clear: both; } pre.sf-dump .sf-dump-ellipsization { display: inline-flex; } pre.sf-dump a { text-decoration: none; cursor: pointer; border: 0; outline: none; color: inherit; } pre.sf-dump img { max-width: 50em; max-height: 50em; margin: .5em 0 0 0; padding: 0; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAHUlEQVQY02O8zAABilCaiQEN0EeA8QuUcX9g3QEAAjcC5piyhyEAAAAASUVORK5CYII=) #D3D3D3; } pre.sf-dump .sf-dump-ellipsis { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; } pre.sf-dump .sf-dump-ellipsis-tail { flex-shrink: 0; } pre.sf-dump code { display:inline; padding:0; background:none; } .sf-dump-public.sf-dump-highlight, .sf-dump-protected.sf-dump-highlight, .sf-dump-private.sf-dump-highlight, .sf-dump-str.sf-dump-highlight, .sf-dump-key.sf-dump-highlight { background: rgba(111, 172, 204, 0.3); border: 1px solid #7DA0B1; border-radius: 3px; } .sf-dump-public.sf-dump-highlight-active, .sf-dump-protected.sf-dump-highlight-active, .sf-dump-private.sf-dump-highlight-active, .sf-dump-str.sf-dump-highlight-active, .sf-dump-key.sf-dump-highlight-active { background: rgba(253, 175, 0, 0.4); border: 1px solid #ffa500; border-radius: 3px; } pre.sf-dump .sf-dump-search-hidden { display: none !important; } pre.sf-dump .sf-dump-search-wrapper { font-size: 0; white-space: nowrap; margin-bottom: 5px; display: flex; position: -webkit-sticky; position: sticky; top: 5px; } pre.sf-dump .sf-dump-search-wrapper > * { vertical-align: top; box-sizing: border-box; height: 21px; font-weight: normal; border-radius: 0; background: #FFF; color: #757575; border: 1px solid #BBB; } pre.sf-dump .sf-dump-search-wrapper > input.sf-dump-search-input { padding: 3px; height: 21px; font-size: 12px; border-right: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px; color: #000; min-width: 15px; width: 100%; } pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next, pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous { background: #F2F2F2; outline: none; border-left: none; font-size: 0; line-height: 0; } pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next { border-top-right-radius: 3px; border-bottom-right-radius: 3px; } pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next > svg, pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous > svg { pointer-events: none; width: 12px; height: 12px; } pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-count { display: inline-block; padding: 0 5px; margin: 0; border-left: none; line-height: 21px; font-size: 12px; }pre.sf-dump, pre.sf-dump .sf-dump-default{color:#FFFFFF; line-height:normal; font:12px "Inconsolata", "Fira Mono", "Source Code Pro", Monaco, Consolas, "Lucida Console", monospace !important; word-wrap: break-word; white-space: pre-wrap; position:relative; z-index:99999; word-break: normal}pre.sf-dump .sf-dump-num{color:#BCD42A}pre.sf-dump .sf-dump-const{color: #4bb1b1;}pre.sf-dump .sf-dump-str{color:#BCD42A}pre.sf-dump .sf-dump-note{color:#ef7c61}pre.sf-dump .sf-dump-ref{color:#A0A0A0}pre.sf-dump .sf-dump-public{color:#FFFFFF}pre.sf-dump .sf-dump-protected{color:#FFFFFF}pre.sf-dump .sf-dump-private{color:#FFFFFF}pre.sf-dump .sf-dump-meta{color:#FFFFFF}pre.sf-dump .sf-dump-key{color:#BCD42A}pre.sf-dump .sf-dump-index{color:#ef7c61}pre.sf-dump .sf-dump-virtual{font-style:italic}pre.sf-dump .sf-dump-ellipsis{color:#FF8400}pre.sf-dump .sf-dump-ns{user-select:none;}pre.sf-dump .sf-dump-ellipsis-note{color:#ef7c61}</style><pre class=sf-dump id=sf-dump-247605646 data-indent-pad="  ">"<span class=sf-dump-str title="82 characters">Cache can only be a string, false, or a \Twig\Cache\CacheInterface implementation.</span>"
+</pre><script>Sfdump("sf-dump-247605646")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -1388,287 +1328,75 @@ class FilesystemCache implements CacheInterface
       </div>
             <div class="frame-code " id="frame-code-1">
         <div class="frame-file">
-                                <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php</span></strong>
+                                <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\twig\twig\src\Environment.php</span></strong>
                   </div>
                     <pre class="code-block line-numbers"
-              data-line="576"
-              data-line-offset="557"
-              data-start="557"
-            ><code class="language-php"> 
-    /**
-     * @return void
-     */
-    private static function initializeIncludeClosure()
-    {
-        if (self::$includeFile !== null) {
-            return;
-        }
+              data-line="131"
+              data-line-offset="112"
+              data-start="112"
+            ><code class="language-php">    {
+        $this-&gt;setLoader($loader);
  
-        /**
-         * Scope isolated include.
-         *
-         * Prevents access to $this/self from included files.
-         *
-         * @param  string $file
-         * @return void
-         */
-        self::$includeFile = \Closure::bind(static function($file) {
-            include $file;
-        }, null, null);
+        $options = array_merge([
+            &#039;debug&#039; =&gt; false,
+            &#039;charset&#039; =&gt; &#039;UTF-8&#039;,
+            &#039;strict_variables&#039; =&gt; false,
+            &#039;autoescape&#039; =&gt; &#039;html&#039;,
+            &#039;cache&#039; =&gt; false,
+            &#039;auto_reload&#039; =&gt; null,
+            &#039;optimizations&#039; =&gt; -1,
+            &#039;use_yield&#039; =&gt; false,
+        ], $options);
+ 
+        $this-&gt;useYield = (bool) $options[&#039;use_yield&#039;];
+        $this-&gt;debug = (bool) $options[&#039;debug&#039;];
+        $this-&gt;setCharset($options[&#039;charset&#039;] ?? &#039;UTF-8&#039;);
+        $this-&gt;autoReload = null === $options[&#039;auto_reload&#039;] ? $this-&gt;debug : (bool) $options[&#039;auto_reload&#039;];
+        $this-&gt;strictVariables = (bool) $options[&#039;strict_variables&#039;];
+        $this-&gt;setCache($options[&#039;cache&#039;]);
+        $this-&gt;extensionSet = new ExtensionSet();
+        $this-&gt;defaultRuntimeLoader = new FactoryRuntimeLoader([
+            EscaperRuntime::class =&gt; function () { return new EscaperRuntime($this-&gt;charset); },
+        ]);
+ 
+        $this-&gt;addExtension(new CoreExtension());
+        $escaperExt = new EscaperExtension($options[&#039;autoescape&#039;]);
+        $escaperExt-&gt;setEnvironment($this, false);
+        $this-&gt;addExtension($escaperExt);
+        if (\PHP_VERSION_ID &gt;= 80000) {
+            $this-&gt;addExtension(new YieldNotReadyExtension($this-&gt;useYield));
+        }
+        $this-&gt;addExtension(new OptimizerExtension($options[&#039;optimizations&#039;]));
     }
-}
- </code></pre>
+ 
+    /**
+     * @internal
+     */
+    public function useYield(): bool
+    {</code></pre>
 
                   
-                
+                          <div class="frame-file">
+              Arguments
+          </div>
+          <div id="frame-code-args-1" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1440263822 data-indent-pad="  "><span class=sf-dump-note>Grav\Common\Twig\Cache\ResilientFilesystemCache</span> {<a class=sf-dump-ref>#334</a>}
+</pre><script>Sfdump("sf-dump-1440263822")</script>
+</li></ol>          </div>
+        
                 <div class="frame-comments empty">
                   </div>
 
       </div>
             <div class="frame-code " id="frame-code-2">
         <div class="frame-file">
-                                <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php</span></strong>
-                  </div>
-                    <pre class="code-block line-numbers"
-              data-line="427"
-              data-line-offset="408"
-              data-start="408"
-            ><code class="language-php">    public function unregister()
-    {
-        spl_autoload_unregister(array($this, &#039;loadClass&#039;));
- 
-        if (null !== $this-&gt;vendorDir) {
-            unset(self::$registeredLoaders[$this-&gt;vendorDir]);
-        }
-    }
- 
-    /**
-     * Loads the given class or interface.
-     *
-     * @param  string    $class The name of the class
-     * @return true|null True if loaded, null otherwise
-     */
-    public function loadClass($class)
-    {
-        if ($file = $this-&gt;findFile($class)) {
-            $includeFile = self::$includeFile;
-            $includeFile($file);
- 
-            return true;
-        }
- 
-        return null;
-    }
- 
-    /**
-     * Finds the path to the file where the class is defined.
-     *
-     * @param string $class The name of the class
-     *
-     * @return string|false The path if found, false otherwise
-     */
-    public function findFile($class)
-    {
-        // class map lookup
-        if (isset($this-&gt;classMap[$class])) {
-            return $this-&gt;classMap[$class];
-        }</code></pre>
-
-                  
-                          <div class="frame-file">
-              Arguments
-          </div>
-          <div id="frame-code-args-2" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1282400794 data-indent-pad="  ">"<span class=sf-dump-str title="113 characters">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer/../twig/twig/src/Cache/FilesystemCache.php</span>"
-</pre><script>Sfdump("sf-dump-1282400794")</script>
-</li></ol>          </div>
-        
-                <div class="frame-comments empty">
-                  </div>
-
-      </div>
-            <div class="frame-code " id="frame-code-3">
-        <div class="frame-file">
-                                <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Twig\Cache\ResilientFilesystemCache.php</span></strong>
-                  </div>
-                    <pre class="code-block line-numbers"
-              data-line="18"
-              data-line-offset="1"
-              data-start="1"
-            ><code class="language-php">&lt;?php
- 
-/**
- * @package    Grav\Common\Twig\Cache
- *
- * @copyright  Copyright (c) 2015 - 2026 Trilby Media, LLC. All rights reserved.
- * @license    MIT License; see LICENSE file for details.
- */
- 
-namespace Grav\Common\Twig\Cache;
- 
-use Twig\Cache\FilesystemCache;
- 
-/**
- * Class ResilientFilesystemCache
- * @package Grav\Common\Twig\Cache
- */
-class ResilientFilesystemCache extends FilesystemCache
-{
-    public function write(string $key, string $content): void
-    {
-        try {
-            parent::write($key, $content);
-        } catch (\Throwable $e) {
-            // Degrade gracefully on filesystem race conditions or permission locking
-        }
-    }
-}
- </code></pre>
-
-                  
-                          <div class="frame-file">
-              Arguments
-          </div>
-          <div id="frame-code-args-3" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-757180589 data-indent-pad="  ">"<span class=sf-dump-str title="26 characters">Twig\Cache\FilesystemCache</span>"
-</pre><script>Sfdump("sf-dump-757180589")</script>
-</li></ol>          </div>
-        
-                <div class="frame-comments empty">
-                  </div>
-
-      </div>
-            <div class="frame-code " id="frame-code-4">
-        <div class="frame-file">
-                                <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php</span></strong>
-                  </div>
-                    <pre class="code-block line-numbers"
-              data-line="576"
-              data-line-offset="557"
-              data-start="557"
-            ><code class="language-php"> 
-    /**
-     * @return void
-     */
-    private static function initializeIncludeClosure()
-    {
-        if (self::$includeFile !== null) {
-            return;
-        }
- 
-        /**
-         * Scope isolated include.
-         *
-         * Prevents access to $this/self from included files.
-         *
-         * @param  string $file
-         * @return void
-         */
-        self::$includeFile = \Closure::bind(static function($file) {
-            include $file;
-        }, null, null);
-    }
-}
- </code></pre>
-
-                  
-                          <div class="frame-file">
-              Arguments
-          </div>
-          <div id="frame-code-args-4" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-39826068 data-indent-pad="  ">"<span class=sf-dump-str title="117 characters">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Twig\Cache\ResilientFilesystemCache.php</span>"
-</pre><script>Sfdump("sf-dump-39826068")</script>
-</li></ol>          </div>
-        
-                <div class="frame-comments empty">
-                  </div>
-
-      </div>
-            <div class="frame-code " id="frame-code-5">
-        <div class="frame-file">
-                                <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer\ClassLoader.php</span></strong>
-                  </div>
-                    <pre class="code-block line-numbers"
-              data-line="427"
-              data-line-offset="408"
-              data-start="408"
-            ><code class="language-php">    public function unregister()
-    {
-        spl_autoload_unregister(array($this, &#039;loadClass&#039;));
- 
-        if (null !== $this-&gt;vendorDir) {
-            unset(self::$registeredLoaders[$this-&gt;vendorDir]);
-        }
-    }
- 
-    /**
-     * Loads the given class or interface.
-     *
-     * @param  string    $class The name of the class
-     * @return true|null True if loaded, null otherwise
-     */
-    public function loadClass($class)
-    {
-        if ($file = $this-&gt;findFile($class)) {
-            $includeFile = self::$includeFile;
-            $includeFile($file);
- 
-            return true;
-        }
- 
-        return null;
-    }
- 
-    /**
-     * Finds the path to the file where the class is defined.
-     *
-     * @param string $class The name of the class
-     *
-     * @return string|false The path if found, false otherwise
-     */
-    public function findFile($class)
-    {
-        // class map lookup
-        if (isset($this-&gt;classMap[$class])) {
-            return $this-&gt;classMap[$class];
-        }</code></pre>
-
-                  
-                          <div class="frame-file">
-              Arguments
-          </div>
-          <div id="frame-code-args-5" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-288627981 data-indent-pad="  ">"<span class=sf-dump-str title="139 characters">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\vendor\composer/../../system/src/Grav/Common/Twig/Cache/ResilientFilesystemCache.php</span>"
-</pre><script>Sfdump("sf-dump-288627981")</script>
-</li></ol>          </div>
-        
-                <div class="frame-comments empty">
-                  </div>
-
-      </div>
-            <div class="frame-code " id="frame-code-6">
-        <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Twig\Twig.php</span></strong>
                   </div>
                     <pre class="code-block line-numbers"
-              data-line="194"
-              data-line-offset="175"
-              data-start="175"
-            ><code class="language-php">            }
- 
-            $this-&gt;grav-&gt;fireEvent(&#039;onTwigLoader&#039;);
- 
-            $this-&gt;loaderArray = new ArrayLoader([]);
-            $loader_chain = new ChainLoader([$this-&gt;loaderArray, $this-&gt;loader]);
- 
-            $activeLoader = $loader_chain;
-            if ($config-&gt;get(&#039;system.strict_mode.twig3_compat&#039;, false)) {
-                $transformer = new Twig3CompatibilityTransformer();
-                $activeLoader = new Twig3CompatibilityLoader($loader_chain, $transformer);
-            }
- 
-            $params = $config-&gt;get(&#039;system.twig&#039;);
-            if (!empty($params[&#039;cache&#039;])) {
+              data-line="208"
+              data-line-offset="189"
+              data-start="189"
+            ><code class="language-php">            if (!empty($params[&#039;cache&#039;])) {
                 $cachePath = $locator-&gt;findResource(&#039;cache://twig&#039;, true, true);
                 // Resilient cache: a failed compiled-template write degrades to
                 // a logged warning + eval fallback instead of a 500 when the
@@ -1693,22 +1421,50 @@ class ResilientFilesystemCache extends FilesystemCache
             // Grav 2.0 dropped the old `undefined_functions` / `undefined_filters`
             // auto-allow (which exposed every non-blocklisted PHP function by
             // default). What remains is the explicit `safe_functions` /
-            // `safe_filters` allow-list, empty by default, and it is now gated by</code></pre>
+            // `safe_filters` allow-list, empty by default, and it is now gated by
+            // `Utils::isDangerousFunction()` so command/code-execution functions
+            // (`system`, `exec`, `assert`, ...) can never be enabled this way.
+            // This closes the precedence flaw where a `safe_functions` entry was
+            // honored ahead of the blocklist (GHSA-9wg2-prc3-vx89). An unknown
+            // function/filter that is not allow-listed is a hard error. These
+            // allow-lists only affect trusted (unsandboxed) templates; editor
+            // page content answers to the Twig content sandbox in security.yaml.
+            $this-&gt;twig-&gt;registerUndefinedFunctionCallback(function (string $name) use ($config) {
+                $allowed = $config-&gt;get(&#039;system.twig.safe_functions&#039;);
+                if (is_array($allowed) &amp;&amp; in_array($name, $allowed, true)
+                    &amp;&amp; function_exists($name) &amp;&amp; !Utils::isDangerousFunction($name)) {
+                    return new TwigFunction($name, $name);
+                }
+ </code></pre>
 
                   
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-6" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1775159936 data-indent-pad="  ">"<span class=sf-dump-str title="47 characters">Grav\Common\Twig\Cache\ResilientFilesystemCache</span>"
-</pre><script>Sfdump("sf-dump-1775159936")</script>
+          <div id="frame-code-args-2" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-338909575 data-indent-pad="  "><span class=sf-dump-note>Grav\Common\Twig\Compatibility\Twig3CompatibilityLoader</span> {<a class=sf-dump-ref>#333</a>}
+</pre><script>Sfdump("sf-dump-338909575")</script>
+</li><li><pre class=sf-dump id=sf-dump-357478703 data-indent-pad="  "><span class=sf-dump-note>array:10</span> [<samp data-depth=1 class=sf-dump-expanded>
+  "<span class=sf-dump-key>debug</span>" => <span class=sf-dump-const>true</span>
+  "<span class=sf-dump-key>charset</span>" => "<span class=sf-dump-str title="5 characters">UTF-8</span>"
+  "<span class=sf-dump-key>strict_variables</span>" => <span class=sf-dump-const>false</span>
+  "<span class=sf-dump-key>autoescape</span>" => "<span class=sf-dump-str title="4 characters">html</span>"
+  "<span class=sf-dump-key>cache</span>" => <span class="sf-dump-note sf-dump-ellipsization" title="Grav\Common\Twig\Cache\ResilientFilesystemCache
+"><span class="sf-dump-ellipsis sf-dump-ellipsis-note">Grav\Common\Twig\Cache</span><span class="sf-dump-ellipsis sf-dump-ellipsis-note">\</span><span class="sf-dump-ellipsis-tail">ResilientFilesystemCache</span></span> {<a class=sf-dump-ref>#334</a>}
+  "<span class=sf-dump-key>auto_reload</span>" => <span class=sf-dump-const>true</span>
+  "<span class=sf-dump-key>optimizations</span>" => <span class=sf-dump-num>-1</span>
+  "<span class=sf-dump-key>use_yield</span>" => <span class=sf-dump-const>false</span>
+  "<span class=sf-dump-key>safe_functions</span>" => []
+  "<span class=sf-dump-key>safe_filters</span>" => []
+</samp>]
+</pre><script>Sfdump("sf-dump-357478703")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-7">
+            <div class="frame-code " id="frame-code-3">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\TwigProcessor.php</span></strong>
                   </div>
@@ -1749,7 +1505,7 @@ class TwigProcessor extends ProcessorBase
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-8">
+            <div class="frame-code " id="frame-code-4">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -1797,18 +1553,18 @@ class TwigProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-8" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-2059626887 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-2059626887")</script>
-</li><li><pre class=sf-dump id=sf-dump-1802464144 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#321</a>}
-</pre><script>Sfdump("sf-dump-1802464144")</script>
+          <div id="frame-code-args-4" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-661356582 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-661356582")</script>
+</li><li><pre class=sf-dump id=sf-dump-222408721 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#321</a>}
+</pre><script>Sfdump("sf-dump-222408721")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-9">
+            <div class="frame-code " id="frame-code-5">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -1844,16 +1600,16 @@ class TwigProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-9" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1149456864 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-1149456864")</script>
+          <div id="frame-code-args-5" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1609334558 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-1609334558")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-10">
+            <div class="frame-code " id="frame-code-6">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\AssetsProcessor.php</span></strong>
                   </div>
@@ -1889,16 +1645,16 @@ class TwigProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-10" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-758191562 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-758191562")</script>
+          <div id="frame-code-args-6" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-375685418 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-375685418")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-11">
+            <div class="frame-code " id="frame-code-7">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -1946,18 +1702,18 @@ class TwigProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-11" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1464982326 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-1464982326")</script>
-</li><li><pre class=sf-dump id=sf-dump-270111183 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#318</a>}
-</pre><script>Sfdump("sf-dump-270111183")</script>
+          <div id="frame-code-args-7" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1508017856 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-1508017856")</script>
+</li><li><pre class=sf-dump id=sf-dump-52237171 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#318</a>}
+</pre><script>Sfdump("sf-dump-52237171")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-12">
+            <div class="frame-code " id="frame-code-8">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -1993,16 +1749,16 @@ class TwigProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-12" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-349336827 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-349336827")</script>
+          <div id="frame-code-args-8" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1508927365 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-1508927365")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-13">
+            <div class="frame-code " id="frame-code-9">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\SchedulerProcessor.php</span></strong>
                   </div>
@@ -2038,16 +1794,16 @@ class SchedulerProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-13" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-77157273 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-77157273")</script>
+          <div id="frame-code-args-9" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-77695168 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-77695168")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-14">
+            <div class="frame-code " id="frame-code-10">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -2095,18 +1851,18 @@ class SchedulerProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-14" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-487622833 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-487622833")</script>
-</li><li><pre class=sf-dump id=sf-dump-1092798379 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#316</a>}
-</pre><script>Sfdump("sf-dump-1092798379")</script>
+          <div id="frame-code-args-10" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-972701306 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-972701306")</script>
+</li><li><pre class=sf-dump id=sf-dump-1872681651 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#316</a>}
+</pre><script>Sfdump("sf-dump-1872681651")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-15">
+            <div class="frame-code " id="frame-code-11">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -2142,16 +1898,16 @@ class SchedulerProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-15" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-574286970 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-574286970")</script>
+          <div id="frame-code-args-11" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-40243139 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-40243139")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-16">
+            <div class="frame-code " id="frame-code-12">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\BackupsProcessor.php</span></strong>
                   </div>
@@ -2187,16 +1943,16 @@ class SchedulerProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-16" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1728710566 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-1728710566")</script>
+          <div id="frame-code-args-12" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-851511437 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-851511437")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-17">
+            <div class="frame-code " id="frame-code-13">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -2244,18 +2000,18 @@ class SchedulerProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-17" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1582106652 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-1582106652")</script>
-</li><li><pre class=sf-dump id=sf-dump-743848357 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#312</a>}
-</pre><script>Sfdump("sf-dump-743848357")</script>
+          <div id="frame-code-args-13" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1089798051 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-1089798051")</script>
+</li><li><pre class=sf-dump id=sf-dump-485225828 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#312</a>}
+</pre><script>Sfdump("sf-dump-485225828")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-18">
+            <div class="frame-code " id="frame-code-14">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -2291,16 +2047,16 @@ class SchedulerProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-18" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1259927138 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-1259927138")</script>
+          <div id="frame-code-args-14" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1921123166 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-1921123166")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-19">
+            <div class="frame-code " id="frame-code-15">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\TasksProcessor.php</span></strong>
                   </div>
@@ -2336,16 +2092,16 @@ class SchedulerProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-19" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1525470197 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-1525470197")</script>
+          <div id="frame-code-args-15" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1087455118 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-1087455118")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-20">
+            <div class="frame-code " id="frame-code-16">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -2393,18 +2149,18 @@ class SchedulerProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-20" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-545004468 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-545004468")</script>
-</li><li><pre class=sf-dump id=sf-dump-443832927 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#310</a>}
-</pre><script>Sfdump("sf-dump-443832927")</script>
+          <div id="frame-code-args-16" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-49233765 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-49233765")</script>
+</li><li><pre class=sf-dump id=sf-dump-1951563872 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#310</a>}
+</pre><script>Sfdump("sf-dump-1951563872")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-21">
+            <div class="frame-code " id="frame-code-17">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -2440,16 +2196,16 @@ class SchedulerProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-21" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-528164822 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-528164822")</script>
+          <div id="frame-code-args-17" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1586123407 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-1586123407")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-22">
+            <div class="frame-code " id="frame-code-18">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\RequestProcessor.php</span></strong>
                   </div>
@@ -2485,16 +2241,16 @@ class SchedulerProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-22" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-187155698 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-187155698")</script>
+          <div id="frame-code-args-18" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1315400955 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-1315400955")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-23">
+            <div class="frame-code " id="frame-code-19">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -2542,18 +2298,18 @@ class SchedulerProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-23" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1232668448 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
-</pre><script>Sfdump("sf-dump-1232668448")</script>
-</li><li><pre class=sf-dump id=sf-dump-1054400532 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#247</a>}
-</pre><script>Sfdump("sf-dump-1054400532")</script>
+          <div id="frame-code-args-19" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-300743266 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#305</a>}
+</pre><script>Sfdump("sf-dump-300743266")</script>
+</li><li><pre class=sf-dump id=sf-dump-1324982644 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#247</a>}
+</pre><script>Sfdump("sf-dump-1324982644")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-24">
+            <div class="frame-code " id="frame-code-20">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -2589,16 +2345,16 @@ class SchedulerProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-24" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-395177233 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-395177233")</script>
+          <div id="frame-code-args-20" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1330331608 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-1330331608")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-25">
+            <div class="frame-code " id="frame-code-21">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\ThemesProcessor.php</span></strong>
                   </div>
@@ -2634,16 +2390,16 @@ class ThemesProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-25" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1738082537 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-1738082537")</script>
+          <div id="frame-code-args-21" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1273923260 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-1273923260")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-26">
+            <div class="frame-code " id="frame-code-22">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -2691,18 +2447,18 @@ class ThemesProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-26" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-640083775 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-640083775")</script>
-</li><li><pre class=sf-dump id=sf-dump-1693174076 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#236</a>}
-</pre><script>Sfdump("sf-dump-1693174076")</script>
+          <div id="frame-code-args-22" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1898619794 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-1898619794")</script>
+</li><li><pre class=sf-dump id=sf-dump-371724010 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#236</a>}
+</pre><script>Sfdump("sf-dump-371724010")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-27">
+            <div class="frame-code " id="frame-code-23">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -2738,16 +2494,16 @@ class ThemesProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-27" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1604391890 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-1604391890")</script>
+          <div id="frame-code-args-23" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-2108698808 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-2108698808")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-28">
+            <div class="frame-code " id="frame-code-24">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\PluginsProcessor.php</span></strong>
                   </div>
@@ -2783,16 +2539,16 @@ class ThemesProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-28" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1038204467 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-1038204467")</script>
+          <div id="frame-code-args-24" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-117679990 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-117679990")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-29">
+            <div class="frame-code " id="frame-code-25">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -2840,18 +2596,18 @@ class ThemesProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-29" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-2056300829 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-2056300829")</script>
-</li><li><pre class=sf-dump id=sf-dump-996180694 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#134</a>}
-</pre><script>Sfdump("sf-dump-996180694")</script>
+          <div id="frame-code-args-25" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1743724644 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-1743724644")</script>
+</li><li><pre class=sf-dump id=sf-dump-641028387 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#134</a>}
+</pre><script>Sfdump("sf-dump-641028387")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-30">
+            <div class="frame-code " id="frame-code-26">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -2887,16 +2643,16 @@ class ThemesProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-30" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-986730919 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-986730919")</script>
+          <div id="frame-code-args-26" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1184142839 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-1184142839")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-31">
+            <div class="frame-code " id="frame-code-27">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\InitializeProcessor.php</span></strong>
                   </div>
@@ -2949,16 +2705,16 @@ class ThemesProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-31" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1325349547 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-1325349547")</script>
+          <div id="frame-code-args-27" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1791321791 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-1791321791")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-32">
+            <div class="frame-code " id="frame-code-28">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Debugger.php</span></strong>
                   </div>
@@ -3013,7 +2769,7 @@ class ThemesProcessor extends ProcessorBase
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-33">
+            <div class="frame-code " id="frame-code-29">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Processors\InitializeProcessor.php</span></strong>
                   </div>
@@ -3066,16 +2822,16 @@ class ThemesProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-33" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-378220374 data-indent-pad="  "><span class=sf-dump-note>Closure()</span> {<a class=sf-dump-ref>#131</a> &#8230;3}
-</pre><script>Sfdump("sf-dump-378220374")</script>
+          <div id="frame-code-args-29" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1803187842 data-indent-pad="  "><span class=sf-dump-note>Closure()</span> {<a class=sf-dump-ref>#131</a> &#8230;3}
+</pre><script>Sfdump("sf-dump-1803187842")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-34">
+            <div class="frame-code " id="frame-code-30">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -3123,18 +2879,18 @@ class ThemesProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-34" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-133347343 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-133347343")</script>
-</li><li><pre class=sf-dump id=sf-dump-1848291940 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#90</a>}
-</pre><script>Sfdump("sf-dump-1848291940")</script>
+          <div id="frame-code-args-30" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-767097805 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-767097805")</script>
+</li><li><pre class=sf-dump id=sf-dump-902163655 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#90</a>}
+</pre><script>Sfdump("sf-dump-902163655")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-35">
+            <div class="frame-code " id="frame-code-31">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -3170,16 +2926,16 @@ class ThemesProcessor extends ProcessorBase
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-35" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-193944616 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-193944616")</script>
+          <div id="frame-code-args-31" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-256735299 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-256735299")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-36">
+            <div class="frame-code " id="frame-code-32">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Middlewares\MultipartRequestSupport.php</span></strong>
                   </div>
@@ -3232,16 +2988,16 @@ class MultipartRequestSupport implements MiddlewareInterface
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-36" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1403691786 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-1403691786")</script>
+          <div id="frame-code-args-32" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-827852316 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-827852316")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-37">
+            <div class="frame-code " id="frame-code-33">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -3289,18 +3045,18 @@ class MultipartRequestSupport implements MiddlewareInterface
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-37" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-2031248167 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-2031248167")</script>
-</li><li><pre class=sf-dump id=sf-dump-1054024974 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#88</a>}
-</pre><script>Sfdump("sf-dump-1054024974")</script>
+          <div id="frame-code-args-33" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1639802028 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-1639802028")</script>
+</li><li><pre class=sf-dump id=sf-dump-1470298882 data-indent-pad="  "><span class=sf-dump-note>Grav\Framework\RequestHandler\RequestHandler</span> {<a class=sf-dump-ref>#88</a>}
+</pre><script>Sfdump("sf-dump-1470298882")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-38">
+            <div class="frame-code " id="frame-code-34">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Framework\RequestHandler\Traits\RequestHandlerTrait.php</span></strong>
                   </div>
@@ -3336,16 +3092,16 @@ class MultipartRequestSupport implements MiddlewareInterface
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-38" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-272227993 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-272227993")</script>
+          <div id="frame-code-args-34" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-252654458 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-252654458")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-39">
+            <div class="frame-code " id="frame-code-35">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\src\Grav\Common\Grav.php</span></strong>
                   </div>
@@ -3398,16 +3154,16 @@ class MultipartRequestSupport implements MiddlewareInterface
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-39" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1640626669 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
-</pre><script>Sfdump("sf-dump-1640626669")</script>
+          <div id="frame-code-args-35" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-523768965 data-indent-pad="  "><span class=sf-dump-note>Nyholm\Psr7\ServerRequest</span> {<a class=sf-dump-ref>#68</a>}
+</pre><script>Sfdump("sf-dump-523768965")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-40">
+            <div class="frame-code " id="frame-code-36">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\index.php</span></strong>
                   </div>
@@ -3448,7 +3204,7 @@ try {
                   </div>
 
       </div>
-            <div class="frame-code " id="frame-code-41">
+            <div class="frame-code " id="frame-code-37">
         <div class="frame-file">
                                 <strong><span class="delimiter">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\system\router.php</span></strong>
                   </div>
@@ -3482,9 +3238,9 @@ require $grav_index;
                           <div class="frame-file">
               Arguments
           </div>
-          <div id="frame-code-args-41" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1402765543 data-indent-pad="  ">"<span class=sf-dump-str title="64 characters">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\index.php</span>"
-</pre><script>Sfdump("sf-dump-1402765543")</script>
+          <div id="frame-code-args-37" class="code-block frame-args">
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1165456939 data-indent-pad="  ">"<span class=sf-dump-str title="64 characters">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\index.php</span>"
+</pre><script>Sfdump("sf-dump-1165456939")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -3527,122 +3283,122 @@ require $grav_index;
               </thead>
                           <tr>
                 <td>DOCUMENT_ROOT</td>
-                <td><pre class=sf-dump id=sf-dump-1105321118 data-indent-pad="  ">"<span class=sf-dump-str title="54 characters">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site</span>"
-</pre><script>Sfdump("sf-dump-1105321118")</script>
+                <td><pre class=sf-dump id=sf-dump-373652012 data-indent-pad="  ">"<span class=sf-dump-str title="54 characters">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site</span>"
+</pre><script>Sfdump("sf-dump-373652012")</script>
 </td>
               </tr>
                           <tr>
                 <td>REMOTE_ADDR</td>
-                <td><pre class=sf-dump id=sf-dump-1171279685 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">127.0.0.1</span>"
-</pre><script>Sfdump("sf-dump-1171279685")</script>
+                <td><pre class=sf-dump id=sf-dump-793156593 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">127.0.0.1</span>"
+</pre><script>Sfdump("sf-dump-793156593")</script>
 </td>
               </tr>
                           <tr>
                 <td>REMOTE_PORT</td>
-                <td><pre class=sf-dump id=sf-dump-187599426 data-indent-pad="  ">"<span class=sf-dump-str title="5 characters">61600</span>"
-</pre><script>Sfdump("sf-dump-187599426")</script>
+                <td><pre class=sf-dump id=sf-dump-1136662863 data-indent-pad="  ">"<span class=sf-dump-str title="5 characters">33265</span>"
+</pre><script>Sfdump("sf-dump-1136662863")</script>
 </td>
               </tr>
                           <tr>
                 <td>SERVER_SOFTWARE</td>
-                <td><pre class=sf-dump id=sf-dump-1999882415 data-indent-pad="  ">"<span class=sf-dump-str title="31 characters">PHP/8.3.30 (Development Server)</span>"
-</pre><script>Sfdump("sf-dump-1999882415")</script>
+                <td><pre class=sf-dump id=sf-dump-2017785109 data-indent-pad="  ">"<span class=sf-dump-str title="31 characters">PHP/8.3.30 (Development Server)</span>"
+</pre><script>Sfdump("sf-dump-2017785109")</script>
 </td>
               </tr>
                           <tr>
                 <td>SERVER_PROTOCOL</td>
-                <td><pre class=sf-dump id=sf-dump-1861207144 data-indent-pad="  ">"<span class=sf-dump-str title="8 characters">HTTP/1.1</span>"
-</pre><script>Sfdump("sf-dump-1861207144")</script>
+                <td><pre class=sf-dump id=sf-dump-215191318 data-indent-pad="  ">"<span class=sf-dump-str title="8 characters">HTTP/1.1</span>"
+</pre><script>Sfdump("sf-dump-215191318")</script>
 </td>
               </tr>
                           <tr>
                 <td>SERVER_NAME</td>
-                <td><pre class=sf-dump id=sf-dump-469147588 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">127.0.0.1</span>"
-</pre><script>Sfdump("sf-dump-469147588")</script>
+                <td><pre class=sf-dump id=sf-dump-1011193757 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">127.0.0.1</span>"
+</pre><script>Sfdump("sf-dump-1011193757")</script>
 </td>
               </tr>
                           <tr>
                 <td>SERVER_PORT</td>
-                <td><pre class=sf-dump id=sf-dump-1506114350 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">8888</span>"
-</pre><script>Sfdump("sf-dump-1506114350")</script>
+                <td><pre class=sf-dump id=sf-dump-1723713370 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">8888</span>"
+</pre><script>Sfdump("sf-dump-1723713370")</script>
 </td>
               </tr>
                           <tr>
                 <td>REQUEST_URI</td>
-                <td><pre class=sf-dump id=sf-dump-410646765 data-indent-pad="  ">"<span class=sf-dump-str title="12 characters">//typography</span>"
-</pre><script>Sfdump("sf-dump-410646765")</script>
+                <td><pre class=sf-dump id=sf-dump-1449746774 data-indent-pad="  ">"<span class=sf-dump-str title="12 characters">//typography</span>"
+</pre><script>Sfdump("sf-dump-1449746774")</script>
 </td>
               </tr>
                           <tr>
                 <td>REQUEST_METHOD</td>
-                <td><pre class=sf-dump id=sf-dump-1170492552 data-indent-pad="  ">"<span class=sf-dump-str title="3 characters">GET</span>"
-</pre><script>Sfdump("sf-dump-1170492552")</script>
+                <td><pre class=sf-dump id=sf-dump-1794284823 data-indent-pad="  ">"<span class=sf-dump-str title="3 characters">GET</span>"
+</pre><script>Sfdump("sf-dump-1794284823")</script>
 </td>
               </tr>
                           <tr>
                 <td>SCRIPT_NAME</td>
-                <td><pre class=sf-dump id=sf-dump-1166292074 data-indent-pad="  ">"<span class=sf-dump-str title="10 characters">\index.php</span>"
-</pre><script>Sfdump("sf-dump-1166292074")</script>
+                <td><pre class=sf-dump id=sf-dump-338882818 data-indent-pad="  ">"<span class=sf-dump-str title="10 characters">\index.php</span>"
+</pre><script>Sfdump("sf-dump-338882818")</script>
 </td>
               </tr>
                           <tr>
                 <td>SCRIPT_FILENAME</td>
-                <td><pre class=sf-dump id=sf-dump-1595103567 data-indent-pad="  ">"<span class=sf-dump-str title="64 characters">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\index.php</span>"
-</pre><script>Sfdump("sf-dump-1595103567")</script>
+                <td><pre class=sf-dump id=sf-dump-1447349917 data-indent-pad="  ">"<span class=sf-dump-str title="64 characters">C:\Users\Julius\Documents\GitHub\demo.juliusponce.site\index.php</span>"
+</pre><script>Sfdump("sf-dump-1447349917")</script>
 </td>
               </tr>
                           <tr>
                 <td>PATH_INFO</td>
-                <td><pre class=sf-dump id=sf-dump-1844460526 data-indent-pad="  ">"<span class=sf-dump-str title="11 characters">/typography</span>"
-</pre><script>Sfdump("sf-dump-1844460526")</script>
+                <td><pre class=sf-dump id=sf-dump-721700783 data-indent-pad="  ">"<span class=sf-dump-str title="11 characters">/typography</span>"
+</pre><script>Sfdump("sf-dump-721700783")</script>
 </td>
               </tr>
                           <tr>
                 <td>PHP_SELF</td>
-                <td><pre class=sf-dump id=sf-dump-1952445741 data-indent-pad="  ">"<span class=sf-dump-str title="10 characters">\index.php</span>"
-</pre><script>Sfdump("sf-dump-1952445741")</script>
+                <td><pre class=sf-dump id=sf-dump-27541089 data-indent-pad="  ">"<span class=sf-dump-str title="10 characters">\index.php</span>"
+</pre><script>Sfdump("sf-dump-27541089")</script>
 </td>
               </tr>
                           <tr>
                 <td>HTTP_HOST</td>
-                <td><pre class=sf-dump id=sf-dump-2079170049 data-indent-pad="  ">"<span class=sf-dump-str title="14 characters">127.0.0.1:8888</span>"
-</pre><script>Sfdump("sf-dump-2079170049")</script>
+                <td><pre class=sf-dump id=sf-dump-20904445 data-indent-pad="  ">"<span class=sf-dump-str title="14 characters">127.0.0.1:8888</span>"
+</pre><script>Sfdump("sf-dump-20904445")</script>
 </td>
               </tr>
                           <tr>
                 <td>HTTP_ACCEPT</td>
-                <td><pre class=sf-dump id=sf-dump-147626475 data-indent-pad="  ">"<span class=sf-dump-str title="3 characters">*/*</span>"
-</pre><script>Sfdump("sf-dump-147626475")</script>
+                <td><pre class=sf-dump id=sf-dump-351341924 data-indent-pad="  ">"<span class=sf-dump-str title="3 characters">*/*</span>"
+</pre><script>Sfdump("sf-dump-351341924")</script>
 </td>
               </tr>
                           <tr>
                 <td>REQUEST_TIME_FLOAT</td>
-                <td><pre class=sf-dump id=sf-dump-1933775867 data-indent-pad="  "><span class=sf-dump-num>1785157099.2753</span>
-</pre><script>Sfdump("sf-dump-1933775867")</script>
+                <td><pre class=sf-dump id=sf-dump-214857322 data-indent-pad="  "><span class=sf-dump-num>1785157124.3923</span>
+</pre><script>Sfdump("sf-dump-214857322")</script>
 </td>
               </tr>
                           <tr>
                 <td>REQUEST_TIME</td>
-                <td><pre class=sf-dump id=sf-dump-341604735 data-indent-pad="  "><span class=sf-dump-num>1785157099</span>
-</pre><script>Sfdump("sf-dump-341604735")</script>
+                <td><pre class=sf-dump id=sf-dump-1122850127 data-indent-pad="  "><span class=sf-dump-num>1785157124</span>
+</pre><script>Sfdump("sf-dump-1122850127")</script>
 </td>
               </tr>
                           <tr>
                 <td>PHP_CLI_ROUTER</td>
-                <td><pre class=sf-dump id=sf-dump-2038137164 data-indent-pad="  "><span class=sf-dump-const>true</span>
-</pre><script>Sfdump("sf-dump-2038137164")</script>
+                <td><pre class=sf-dump id=sf-dump-466360902 data-indent-pad="  "><span class=sf-dump-const>true</span>
+</pre><script>Sfdump("sf-dump-466360902")</script>
 </td>
               </tr>
                           <tr>
                 <td>argv</td>
-                <td><pre class=sf-dump id=sf-dump-335648572 data-indent-pad="  ">[]
-</pre><script>Sfdump("sf-dump-335648572")</script>
+                <td><pre class=sf-dump id=sf-dump-809773955 data-indent-pad="  ">[]
+</pre><script>Sfdump("sf-dump-809773955")</script>
 </td>
               </tr>
                           <tr>
                 <td>argc</td>
-                <td><pre class=sf-dump id=sf-dump-1414156156 data-indent-pad="  "><span class=sf-dump-num>0</span>
-</pre><script>Sfdump("sf-dump-1414156156")</script>
+                <td><pre class=sf-dump id=sf-dump-1719497182 data-indent-pad="  "><span class=sf-dump-num>0</span>
+</pre><script>Sfdump("sf-dump-1719497182")</script>
 </td>
               </tr>
                         </table>

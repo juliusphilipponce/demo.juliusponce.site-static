@@ -29,6 +29,8 @@
   padding: 0 !important;
   margin: 0 !important;
   background: transparent !important;
+  max-width: 100% !important;
+  width: 100% !important;
 }
 
 .mitchcarson-theme .section.modular-text .container {
@@ -40,12 +42,18 @@
 
 .mitchcarson-theme .section.modular-text .columns {
   display: block !important;
+  grid-template-columns: none !important;
+  gap: 0 !important;
   margin: 0 !important;
+  width: 100% !important;
 }
 
 .mitchcarson-theme .section.modular-text .column {
   padding: 0 !important;
   margin: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  grid-column: 1 / -1 !important;
 }
 
 /* NAVBAR HEADER OVERRIDES FOR MITCH CARSON SUB-SITE */

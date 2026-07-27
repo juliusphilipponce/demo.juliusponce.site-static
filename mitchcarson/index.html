@@ -80,7 +80,7 @@
     
         
         <main id="start">
-                    <div id="hero" class="module-anchor"></div>
+                    <div id="home" class="module-anchor"></div>
         
 <section class="section modular-text ">
     <div class="container">
@@ -449,7 +449,7 @@
     </div>
 </section>
 
-            <div id="articles-content" class="module-anchor"></div>
+            <div id="blog-articles" class="module-anchor"></div>
         
 <section class="section modular-text ">
     <div class="container">
@@ -792,5 +792,34 @@
         <script src="/user/themes/quark2/js/site.js?g-42ccbcfa"></script>
 
 
+            <script>
+        (function () {
+            var header = document.getElementById('header');
+            var offset = header ? header.offsetHeight : 0;
+            document.querySelectorAll('.navigation a[href^="#"]').forEach(function (a) {
+                a.addEventListener('click', function (e) {
+                    var id = a.getAttribute('href').slice(1);
+                    var target = document.getElementById(id);
+                    if (target) {
+                        e.preventDefault();
+                        var top = target.getBoundingClientRect().top + window.scrollY - offset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                        history.replaceState(null, '', '#' + id);
+                    }
+                });
+            });
+            var sections = document.querySelectorAll('.module-anchor');
+            window.addEventListener('scroll', function () {
+                var y = window.scrollY + offset + 20;
+                var current = null;
+                sections.forEach(function (s) {
+                    if (s.offsetTop <= y) current = s.id;
+                });
+                document.querySelectorAll('.navigation a[href^="#"]').forEach(function (a) {
+                    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+                });
+            }, { passive: true });
+        })();
+        </script>
     </body>
 </html>

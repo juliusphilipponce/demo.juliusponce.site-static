@@ -444,34 +444,50 @@
   letter-spacing: 0.05em;
 }
 
-.mc-pillar-card--quote {
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
-  border-color: rgba(245, 158, 11, 0.3);
+.mc-quote-banner {
+  margin-top: 4rem;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(18, 20, 29, 0.9) 50%, rgba(139, 92, 246, 0.08) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: 24px;
+  padding: 3.5rem 3rem;
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 40px var(--mc-gold-glow);
+}
+
+.mc-quote-banner-inner {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
-.mc-quote {
-  margin: 0 0 2rem 0;
+.mc-banner-quote {
+  margin: 0;
   padding: 0;
+  max-width: 760px;
 }
 
-.mc-quote p {
+.mc-banner-quote p {
   font-family: 'Outfit', sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   font-style: italic;
   line-height: 1.6;
   color: #ffffff;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
-.mc-quote footer strong {
-  display: block;
+.mc-banner-quote footer strong {
+  display: inline-block;
   color: var(--mc-gold-start);
-  font-size: 1rem;
+  font-size: 1.05rem;
+  margin-right: 0.5rem;
 }
 
-.mc-quote footer span {
-  font-size: 0.8125rem;
+.mc-banner-quote footer span {
+  font-size: 0.875rem;
   color: var(--mc-text-muted);
 }
 

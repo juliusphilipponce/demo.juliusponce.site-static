@@ -21,6 +21,7 @@
   --q2-text-strong: #111111;
   --q2-text-muted: #898989;
   --q2-text-inverse: #ffffff;
+  --q2-link: #4f46e5;
 
   --q2-border-ring: rgba(34, 42, 53, 0.08);
   --q2-border-strong: rgba(34, 42, 53, 0.14);
@@ -102,6 +103,7 @@
   --q2-text-strong: #ffffff;
   --q2-text-muted: #9a9aa0;
   --q2-text-inverse: #111111;
+  --q2-link: #818cf8;
 
   --q2-border-ring: rgba(255, 255, 255, 0.14);
   --q2-border-strong: rgba(255, 255, 255, 0.2);

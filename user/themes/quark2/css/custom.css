@@ -450,4 +450,13 @@ button, input[type="button"], input[type="submit"], .btn, .copy-btn {
   color: #d4d4d8;
 }
 
+/* Mobile Menu Visibility Fix: Ensure mobile burger menu and overlay stack above fixed header (z-index 100) */
+.mobile-menu {
+  z-index: 1001 !important;
+}
+.overlay {
+  z-index: 1000 !important;
+}
+
+
 

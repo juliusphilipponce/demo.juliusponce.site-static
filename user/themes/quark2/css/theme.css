@@ -886,7 +886,7 @@ button.theme-toggle:hover {
   position: fixed;
   top: 14px;
   right: 14px;
-  z-index: 70;
+  z-index: 1001;
 }
 button.button_container,
 .button_container {
@@ -943,7 +943,7 @@ button.button_container:focus-visible {
   position: fixed;
   inset: 0;
   background: var(--q2-bg);
-  z-index: 60;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   padding: 5rem 2rem 2rem;
